@@ -1,0 +1,5 @@
+KiipSDK.jar		
+dropbox-android-sdk-1.6.3.jar	
+twitter4j-core-4.0.2.jar
+YouTubeAndroidPlayerApi.jar	
+json_simple-1.1.jar

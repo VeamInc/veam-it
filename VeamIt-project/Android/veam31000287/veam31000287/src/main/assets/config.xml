@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <mcn_id value="1" />
+    <app_id value="31000287" />
+    <app_name value="T005" />
+    <template_ids value="8_1_2_7_3" />
+    <tab_title_1 value="YouTube" />
+    <template_title_1 value="YouTube" />
+    <tab_title_2 value="Forum" />
+    <template_title_2 value="Forum" />
+    <tab_title_3 value="Links" />
+    <template_title_3 value="Links" />
+    <tab_title_7 value="Contents" />
+    <template_title_7 value="Contents" />
+    <tab_title_8 value="Premium" />
+    <template_title_8 value="Premium" />
+    <subscription_price_0 value="$0.99" />
+    <top_bar_height value="45.0" />
+    <top_bar_title_font value="HelveticaNeue" />
+    <top_bar_title_font_size value="18.0" />
+    <new_videos_text value="New Videos" />
+    <number_of_goodjob_images value="10" />
+    <stored_alternative_image_ids value="112832,7324,112833,112834,112835,112836,112837,112838,112839,112840,112841,112842,112843,112844,112845,112846,112847,112848,112849,112850,112851,112852,112853,112854,112855,112856,112857,112858,112859,112860,112861,112862,112863,112864,112865,112866,112867,112868,112869,112870,112871,112872,112873,112874,112875,112876,112877,112878,112879,112880,112881,112882,122638,122639,122640,122641" />
+    <top_bar_color_argb value="FF8B8B8B" />
+    <tab_text_color_argb value="FF000000" />
+    <base_text_color_argb value="FF000000" />
+    <base_background_color_argb value="33FFFFFF" />
+    <new_videos_text_color_argb value="FF1F6FFF" />
+    <table_selection_color_argb value="301F6FFF" />
+    <concept_color_argb value="FF1F6FFF" />
+</list>

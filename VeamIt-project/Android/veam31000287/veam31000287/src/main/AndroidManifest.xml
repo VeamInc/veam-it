@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.veam.veam31000287"
+    android:versionCode="100"
+    android:versionName="1.00" >
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="22" />
+    
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:largeHeap="true"
+		/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<!-- 
+		<uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+	 -->
+	<uses-permission android:name="com.android.vending.BILLING" />    <!-- Required permission to use in-app billing. -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<uses-permission android:name="co.veam.veam31000287.permission.C2D_MESSAGE" />    
+	<permission android:name="co.veam.veam31000287.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	
+	<uses-feature android:name="android.hardware.location" android:required="false" />
+	<uses-feature android:name="android.hardware.location.gps" android:required="false" />
+	<uses-feature android:name="android.hardware.camera" android:required="false" />
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />	
+    
+    <application android:name=".AnalyticsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+         >
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value=""/>
+        <activity android:name="co.veam.veam31000287.InitialActivity" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="co.veam.veam31000287.PreviewLoginActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize|keyboardHidden" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.PreviewHomeActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize|keyboardHidden" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.VideosActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize|keyboardHidden" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.CameraActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ImageEditActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ImageShareActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ExclusiveGridActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize|keyboardHidden" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.SellItemCategoryActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize|keyboardHidden" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.SellSectionCategoryActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize|keyboardHidden" android:launchMode="singleTask" />
+        <activity android:name=".AudioPlayActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name=".PostAudioCommentActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="co.veam.veam31000287.ForumActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ShopActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.WebActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.SettingsActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.TwitterAuthActivity" android:screenOrientation="portrait" />
+        <activity android:name=".VideoPlayActivity" android:launchMode="singleTask" android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".PostVideoCommentActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.facebook.LoginActivity" android:screenOrientation="portrait" />
+
+        <activity android:name="co.veam.veam31000287.ConsoleChangePaymentTypeActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleCustomizeDesignActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleAppStoreActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditAppInformationActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditRatingActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleTermsActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleFaqActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleMixedForGridActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSubscriptionDescriptionActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditAudioActivity" android:screenOrientation="portrait" android:launchMode="singleTask" />
+        <activity android:name="co.veam.veam31000287.ConsoleDropboxActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditVideoActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleYoutubeCategoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleForumActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditForumActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleWebActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditWebActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleTutorialActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSnapActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleSellItemCategoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellItemCategoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleSellAudioActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellAudioActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleSellVideoActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleSellPdfActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellVideoActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellPdfActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleTakeSnapActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleSellSectionCategoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellSectionCategoryActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSectionDescriptionActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSectionPaymentDescriptionActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleSellSectionItemActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellSectionVideoActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellSectionPdfActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleEditSellSectionAudioActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleMessageActivity" android:screenOrientation="portrait" />
+        <activity android:name="co.veam.veam31000287.ConsoleStarterTutorialActivity" android:screenOrientation="portrait" />
+
+
+
+
+
+
+
+
+
+
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboard">
+            <intent-filter>
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-__DROPBOX_KEY__" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="UpdateService"></service>
+        <service android:name="BackgroundSoundService"></service>
+        <service android:name="BackgroundVideoService"></service>
+
+        <receiver android:name=".GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND" >
+		    <intent-filter>
+      			<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+      			<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+      			<category android:name="co.veam.veam31000287" />
+    		</intent-filter>
+		</receiver>        
+		<service android:name="co.veam.veam31000287.GCMIntentService" />
+        <service android:name="co.veam.veam31000287.UploadIntentService" />
+
+        
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+	</application>
+</manifest>

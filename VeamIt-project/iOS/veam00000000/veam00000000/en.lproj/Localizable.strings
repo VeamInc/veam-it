@@ -1,0 +1,296 @@
+/* 
+  Localizable.strings
+  veam00000000
+
+  Created by veam on 6/29/15.
+  Copyright (c) 2015 veam. All rights reserved.
+*/
+
+"initial_tutorial_title_1"="Welcome!!";
+"initial_tutorial_title_2"="Tap bar below or Swipe";
+"initial_tutorial_title_3"="Tap menu icon";
+"initial_tutorial_sub_title_1"="";
+"initial_tutorial_sub_title_2"="to switch Preview and Edit Mode";
+"initial_tutorial_sub_title_3"="to customize and edit submission materials";
+"initial_tutorial_button_1"="Next";
+"initial_tutorial_button_2"="Got it!";
+"initial_tutorial_button_3"="Got it!";
+
+"exclusive_upload"="Premium - Upload";
+"sell_video_upload"="Sell Video - Upload";
+"sell_pdf_upload"="Sell Pdf - Upload";
+"sell_audio_upload"="Sell Audio - Upload";
+"sell_section_item_upload"="Content - Upload";
+"subscription_information"="Subscription Information";
+"section_information"="Section Information";
+"description_before_purchasing"="Description before purchasing";
+"description_of_this_section"="Description of this section";
+"set_the_price_monthly"="Set the Price";
+"set_the_price"="Set the Price";
+"payment_type"="Payment Type";
+"upload"="Upload";
+"confirm"="Confirm";
+"upload_audio_to_veam_cloud"="Upload Audio to Veam Cloud";
+"title"="Title";
+"audio_data_url"="Audio Data URL";
+"image_data_url"="Image Data URL";
+"pdf_data_url"="PDF Data URL";
+"upload_video_to_veam_cloud"="Upload Video to Veam Cloud";
+"upload_pdf_to_veam_cloud"="Upload Pdf to Veam Cloud";
+"upload_audio_to_veam_cloud"="Upload Audio to Veam Cloud";
+"video_data_url"="Video Data URL";
+"edit_text"="Edit text";
+"price"="Price";
+"ppc_price"="Price";
+"payment"="Payment Type";
+"forum_theme"="Forum - Theme";
+"add_new_theme"="Add New Theme";
+"add_new_video"="Add New Video";
+"add_new_pdf"="Add New PDF";
+"add_new_audio"="Add New Audio";
+"add_new_item"="Add New Content";
+"theme_caption"="Theme";
+"theme_title"="Title";
+"links_url"="Links - URL";
+"add_new_url"="Add New URL";
+"link_caption"="URL";
+"link_title"="Title";
+
+"sell_content_category"="Sell Content - Category";
+"add_new_category"="Add New Category";
+"category_caption"="Category";
+"category_title"="Title";
+"category_kind"="Kind";
+
+
+"SIDE_MENU_TITLE_PREVIEW"="Back to Preview";
+"SIDE_MENU_TITLE_HOME"="Back to Home";
+"SIDE_MENU_TITLE_DESIGN"="Customize Your App Design";
+"SIDE_MENU_TITLE_FEATURE"="Change Payment Type";
+"SIDE_MENU_TITLE_APP_INFO"="Preparing for App Submission";
+"SIDE_MENU_TITLE_BANK_ACCOUNT"="Register Bank Account";
+"SIDE_MENU_TITLE_HELP"="Notifications";
+"SIDE_MENU_TITLE_INFORMATION"="Information from Veam";
+"SIDE_MENU_TITLE_FAQ"="Inquiry";
+"SIDE_MENU_TITLE_ABOUT"="About This App";
+"SIDE_MENU_TITLE_SIGN_OUT"="Sign out";
+"SIDE_MENU_TITLE_STATS"="Stats";
+"SIDE_MENU_TITLE_TERMS"="Accept the terms";
+"SIDE_MENU_TITLE_SUBMIT"="App Submit";
+"SIDE_MENU_TITLE_DEPLOY"="Publish";
+
+"customize_design_caption"="Customize your app design";
+"customize_feature_caption"="Change Payment Type";
+
+"customize_design_title_1"="Splash & Background image";
+"customize_design_description_1"="Size : 640 x 1136 px (Portrait)";
+"customize_design_title_2"="Basic Color";
+"customize_design_description_2"=" ";
+"customize_design_title_3"="Icon image";
+"customize_design_description_3"="Size : 1024 x 1024 px";
+"customize_design_title_4"="Main image";
+"customize_design_description_4"="Size : 1024 x 1024 px";
+
+"exclusive_tutorial"="Premium - Tutorial";
+"exclusive_tutorial_title_1"="Premium Section";
+"exclusive_tutorial_description_1"="Users will pay monthly subscription fee\nto access. Post your premium content\n(voice or audio) to your devoted fans!";
+"exclusive_tutorial_title_2"="Upload Premium Content";
+"exclusive_tutorial_description_2"="Video or audio data accepted.\nPDF attachable for audio.\nMonthly update recommended";
+"exclusive_tutorial_title_3"="Edit Subscription Blurb";
+"exclusive_tutorial_description_3"="Blurb & price will be shown to users\nbefore paying the monthly subscription";
+"exclusive_released_tutorial_title_1"="Upload Premium Content";
+"exclusive_released_tutorial_description_1"="Video or audio data accepted.\nPDF attachable for audio.\nMonthly update recommended";
+
+"youtube_tutorial"="YouTube - Tutorial";
+"youtube_tutorial_title_1"="Automatically Synced Playlist";
+"youtube_tutorial_description_1"="YouTube playlists will be automatically\nsorted and synced in the app.\nAdd views to your YouTube videos.";
+"youtube_tutorial_title_2"="Edit Playlist";
+"youtube_tutorial_description_2"="Change list order, hide playlists";
+
+"forum_tutorial"="Forum - Tutorial";
+"forum_tutorial_title_1"="Interact with your Fans";
+"forum_tutorial_description_1"="Instagram-like picture Forum\ndedicated to the app. Users log in\nwith Facebook or Twitter account.";
+"forum_tutorial_title_2"="Pick Forum Themes";
+"forum_tutorial_description_2"="Add topics you want the fans to post about";
+"forum_tutorial_title_3"="Check out how it works";
+"forum_tutorial_description_3"="Login with Facebook or Twitter account\nand check out how the Forum works.\nPosts in this app will be for test only.";
+"forum_released_tutorial_title_1"="Interact with your Fans";
+"forum_released_tutorial_description_1"="Instagram-like picture Forum\ndedicated to the app. Users log in\nwith Facebook or Twitter account.";
+"forum_released__tutorial_title_2"="Pick Forum Themes";
+"forum_released__tutorial_description_2"="Add topics you want the fans to post about";
+
+"links_tutorial"="Links - Tutorial";
+"links_tutorial_title_1"="Edit Social Media Links";
+"links_tutorial_description_1"="Edit the URLs to forward app traffic to your\nsocial media, merch stores and blogs";
+
+"edit_your_app_information"="Edit your app information";
+
+"app_store_details"="Details";
+"app_store_reviews"="Reviews";
+"app_store_related"="Related";
+
+
+"app_store_description"="Description";
+"app_store_information"="Information";
+"app_store_info_seller"="Seller" ;
+"app_store_info_developer"="Developer" ;
+"app_store_info_category"="Category" ;
+"app_store_info_updated"="Updated" ;
+"app_store_info_version"="Version" ;
+"app_store_info_size"="Size" ;
+"app_store_info_rating"="Rating" ;
+"app_store_info_compatibility"="Compatibility" ;
+"app_store_info_compatibility_text"="Requires iOS 6.0 or later.\nCompatible with iPhone, iPad, and iPod touch. This app is optimized for iPhone 5." ;
+"app_store_in_app_purchases"="In-App Purchases";
+"app_store_version_history"="Version History";
+"app_store_developer_website"="Developer Website";
+"app_store_privacy_policy"="Privacy Policy";
+"app_store_developer_app"="Developer Apps";
+"app_store_offers_iap"="Offers In-App Purchases";
+
+"app_info_app_name"="App Name";
+"app_info_store_app_name"="Store App Name";
+"app_info_description"="Description";
+"app_info_keywords"="Keywords";
+"app_info_category"="Category";
+"app_info_rating"="Rating";
+"app_info_rating_caption"="App Rating";
+
+"required_app_information"="Required app information";
+"required_operations"="Following operations required before submission";
+
+"required_operation_subscription"="Subscription Contents" ;
+"required_operation_subscription_description"="Subscription Description" ;
+"required_operation_forum"="Forum Themes" ;
+"required_operation_links"="Links" ;
+"required_operation_terms"="Accept the terms" ;
+"required_operation_description"="App Store Description" ;
+"required_operation_keywords"="App Store Keywords" ;
+"required_operation_category"="App Store Category" ;
+"required_operation_rating"="App Store Rating" ;
+"required_operation_background"="Splash & Background image" ;
+
+
+
+
+
+"PreviewDownloadTitie"="Hang on just a sec,\nVideo downloading.";
+"PreviewDownloadDescription"="Hit cancel to skip";
+"error_failed_to_open_movie"="failed to open movie";
+"login_selection"="Please pick an existing account to login & join the forum!";
+"login"="Login";
+"cancel"="Cancel";
+"select"="Select";
+"view_all_comments"="view all %d comments";
+"close_all_comments"="close comments";
+"no_camera_available"="No camera available";
+"external_storage_unavailable"="External storage unavailable";
+"out_of_memory"="Out of memory";
+"crop_not_supported"="Your device doesn\'t support the crop action";
+"exclusive"="Premium";
+"youtube"="YouTube";
+"forum"="Forum";
+"links"="Links";
+"iab_setup_failed"="Problem setting up in-app billing: ";
+"iab_not_setup"="Google Play In-app Billing is not set up.";
+"about_subscription"="About Subscription";
+"already_purchased"="already purchased";
+"purchase_cancelled"="Error purchasing: ";
+"updating"="Updating...";
+"following"="Following";
+"comment"="Comment";
+"post"="Post";
+"please_input_comment"="Please input comments";
+"confirmation"="Confirmation";
+"are_you_sure_you_want_to_remove"="Are you sure you want to remove?";
+"yes"="Yes";
+"no"="No";
+"not_connected"="Not connected";
+"report_inappropriate_photo"="Report Inappropriate Photo";
+"why_are_you_reporting_this_photo"="Why are you reporting this photo?";
+"report"="Report";
+"my_favorites"="My Favorites";
+"my_posts"="My Posts";
+"edit"="Edit";
+"next"="Next";
+"add_a_caption"="Add a caption";
+"share"="Share";
+"please_add_a_caption"="Please add a caption";
+"login_failed"="Login failed";
+"release_to_refresh"="Release to refresh";
+"profile"="Profile";
+"followers"="Followers";
+"i_am_following"="Following";
+"do_follow"="Follow";
+"done"="Done";
+"not_logged_in"="Not Logged In";
+"tap_to_edit_your_message"="(Tap to edit your message)";
+"posts"="Posts";
+"account_login"="Account Login";
+"storage_settings"="Storage Settings";
+"restore"="Restore";
+"restore_title"="Restore iTunes Purchases";
+"restore_description"="If you have already use Veam app\nyou can recover purchased contents.";
+"help"="Help";
+"user_guide"="User Guide";
+"terms_of_service"="Terms of Service";
+"about_this_app"="About This App";
+"settings"="Settings";
+"warning"="Warning";
+"logout_warning"="Previous posts will not be shown on \"My Posts\" when using new account";
+"logout"="Logout";
+"no_following"="No Following";
+"message_sent"="Message sent";
+"failed_to_send_message"="Failed to send message";
+"exclusive_video"="Premium Video";
+"forum_name_hot_topics"="Hot Topics";
+"go_to_settings"="Go to Settings";
+"second_ago"="second ago";
+"seconds_ago"="seconds ago";
+"minute_ago"="minute ago";
+"minutes_ago"="minutes ago";
+"hour_ago"="hour ago";
+"hours_ago"="hours ago";
+"day_ago"="day ago";
+"days_ago"="days ago";
+"purchased"="Purchased";
+"about_video"="About Video";
+"download_this_video"="Download this video?";
+"about_audio"="About Audio";
+"about_pdf"="About PDF";
+
+"subscription"="Subscription";
+"free_subscription"="Free";
+"pay_per_content"="Pay per content";
+"one_time_payment"="One time payment for all content";
+"description"="Description";
+
+"accept_the_terms"="Accept the terms";
+"accepted"="Accepted ✔";
+"accept"="Accept";
+"accept_these_terms"="Accept these terms?";
+
+"about_section"="About Section";
+
+"shoot_a_video"="Shoot a Video";
+
+"sign_up_with_an_email_address"="Sign up with an email address";
+"first_name"="First name";
+"last_name"="Last name";
+"email"="Email";
+"password"="Password";
+"profile_picture"="Profile picture";
+"create_account"="CREATE ACCOUNT";
+"selected"="Selected";
+"your_password_must_be_at_least_8_characters_long"="Your password must be at least 8 characters long.";
+"please_enter_your_mail_address"="Please enter your mail address.";
+"reset_the_password"="Reset the password?";
+"forgot_password"="Forgot password?";
+
+"notification_title"="Notifications";
+"inquiry_title"="Inquiry";
+
+"submit_confirmation_title"="IMPORTANT!";
+"submit_confirmation"="Please verify that the images and colors you chose in the Veam It! Publisher match your preferences. Once your app is submitted for review in the marketplaces, changing the images and colors requires a lengthy process that includes sending your new images to Veam for processing and re-submission. \n\n　　　　　　　　　      Veam Inc.";
+"submit_ok"="Proceed to AppSubmit";
+"submit_cancel"="Go Back and Check";

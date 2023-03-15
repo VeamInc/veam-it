@@ -1,0 +1,1974 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  admob:
+    _attributes: { phpName: Admob }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    unit_id: { phpName: UnitId, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: VARCHAR, size: '64', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  alternative_image:
+    _attributes: { phpName: AlternativeImage }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    file_name: { phpName: FileName, type: LONGVARCHAR, required: true }
+    language: { phpName: Language, type: LONGVARCHAR, required: true }
+    url: { phpName: Url, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id] }
+  app:
+    _attributes: { phpName: App }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    client_id: { phpName: ClientId, type: INTEGER, size: '11', required: true }
+    mcn_id: { phpName: McnId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    getglue_object: { phpName: GetglueObject, type: LONGVARCHAR, required: true }
+    getglue_source: { phpName: GetglueSource, type: LONGVARCHAR, required: true }
+    facebook_app: { phpName: FacebookApp, type: LONGVARCHAR, required: true }
+    twitter_consumer_key: { phpName: TwitterConsumerKey, type: LONGVARCHAR, required: true }
+    twitter_consumer_secret: { phpName: TwitterConsumerSecret, type: LONGVARCHAR, required: true }
+    iab_public: { phpName: IabPublic, type: LONGVARCHAR, required: true }
+    kiip_app_key: { phpName: KiipAppKey, type: LONGVARCHAR, required: true }
+    kiip_app_secret: { phpName: KiipAppSecret, type: LONGVARCHAR, required: true }
+    kiip_android_app_key: { phpName: KiipAndroidAppKey, type: LONGVARCHAR, required: true }
+    kiip_android_app_secret: { phpName: KiipAndroidAppSecret, type: LONGVARCHAR, required: true }
+    secret: { phpName: Secret, type: LONGVARCHAR, required: true }
+    category: { phpName: Category, type: LONGVARCHAR, required: true }
+    sub_category: { phpName: SubCategory, type: LONGVARCHAR, required: true }
+    store_app_name: { phpName: StoreAppName, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    key_word: { phpName: KeyWord, type: LONGVARCHAR, required: true }
+    icon_image: { phpName: IconImage, type: LONGVARCHAR, required: true }
+    splash_image: { phpName: SplashImage, type: LONGVARCHAR, required: true }
+    background_image: { phpName: BackgroundImage, type: LONGVARCHAR, required: true }
+    screen_shot_1: { phpName: ScreenShot1, type: LONGVARCHAR, required: true }
+    screen_shot_2: { phpName: ScreenShot2, type: LONGVARCHAR, required: true }
+    screen_shot_3: { phpName: ScreenShot3, type: LONGVARCHAR, required: true }
+    screen_shot_4: { phpName: ScreenShot4, type: LONGVARCHAR, required: true }
+    screen_shot_5: { phpName: ScreenShot5, type: LONGVARCHAR, required: true }
+    apk_url: { phpName: ApkUrl, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    status_text: { phpName: StatusText, type: LONGVARCHAR, required: true }
+    modify: { phpName: Modify, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    current_process: { phpName: CurrentProcess, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    picture_notification: { phpName: PictureNotification, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    terms_accepted_at: { phpName: TermsAcceptedAt, type: TIMESTAMP, required: false }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    released_at: { phpName: ReleasedAt, type: TIMESTAMP, required: false }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_color:
+    _attributes: { phpName: AppColor }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    index: { phpName: Index, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    color: { phpName: Color, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_creator:
+    _attributes: { phpName: AppCreator }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    username: { phpName: Username, type: LONGVARCHAR, required: true }
+    first_name: { phpName: FirstName, type: LONGVARCHAR, required: true }
+    last_name: { phpName: LastName, type: LONGVARCHAR, required: true }
+    password: { phpName: Password, type: LONGVARCHAR, required: true }
+    company_name: { phpName: CompanyName, type: LONGVARCHAR, required: true }
+    telephone: { phpName: Telephone, type: LONGVARCHAR, required: true }
+    sns: { phpName: Sns, type: LONGVARCHAR, required: true }
+    validation_token: { phpName: ValidationToken, type: LONGVARCHAR, required: true }
+    approval_token: { phpName: ApprovalToken, type: LONGVARCHAR, required: true }
+    valid: { phpName: Valid, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    approve: { phpName: Approve, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    privilages: { phpName: Privilages, type: INTEGER, size: '11', required: true, defaultValue: '65535' }
+    expiration: { phpName: Expiration, type: TIMESTAMP, required: true, defaultValue: '2030-01-01 00:00:00' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_creator_admin:
+    _attributes: { phpName: AppCreatorAdmin }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    username: { phpName: Username, type: LONGVARCHAR, required: true }
+    password: { phpName: Password, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_creator_message:
+    _attributes: { phpName: AppCreatorMessage }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    app_creator_id: { phpName: AppCreatorId, type: INTEGER, size: '11', required: true }
+    mcn_id: { phpName: McnId, type: INTEGER, size: '11', required: true }
+    mcn_user_name: { phpName: McnUserName, type: LONGVARCHAR, required: true }
+    direction: { phpName: Direction, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_creator_id: [app_creator_id], mcn_id: [mcn_id], kind: [kind] }
+  app_creator_message_latest:
+    _attributes: { phpName: AppCreatorMessageLatest }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    app_creator_id: { phpName: AppCreatorId, type: INTEGER, size: '11', required: true }
+    mcn_id: { phpName: McnId, type: INTEGER, size: '11', required: true }
+    mcn_user_name: { phpName: McnUserName, type: LONGVARCHAR, required: true }
+    direction: { phpName: Direction, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_creator_id: [app_creator_id], mcn_id: [mcn_id], kind: [kind] }
+  app_data:
+    _attributes: { phpName: AppData }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    data: { phpName: Data, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_process:
+    _attributes: { phpName: AppProcess }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_process_category_id: { phpName: AppProcessCategoryId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    depends_on: { phpName: DependsOn, type: LONGVARCHAR, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    help_url: { phpName: HelpUrl, type: LONGVARCHAR, required: true }
+    info_action: { phpName: InfoAction, type: LONGVARCHAR, required: true }
+    next_process1: { phpName: NextProcess1, type: INTEGER, size: '11', required: true }
+    next_text1: { phpName: NextText1, type: LONGVARCHAR, required: true }
+    next_process2: { phpName: NextProcess2, type: INTEGER, size: '11', required: true }
+    next_text2: { phpName: NextText2, type: LONGVARCHAR, required: true }
+    next_process3: { phpName: NextProcess3, type: INTEGER, size: '11', required: true }
+    next_text3: { phpName: NextText3, type: LONGVARCHAR, required: true }
+    order: { phpName: Order, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_process_category:
+    _attributes: { phpName: AppProcessCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_process_log:
+    _attributes: { phpName: AppProcessLog }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    app_process_id: { phpName: AppProcessId, type: INTEGER, size: '11', required: true }
+    result: { phpName: Result, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    user_name: { phpName: UserName, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_rating_answer:
+    _attributes: { phpName: AppRatingAnswer }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    app_rating_question_id: { phpName: AppRatingQuestionId, type: INTEGER, size: '11', required: true }
+    answer: { phpName: Answer, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_rating_question:
+    _attributes: { phpName: AppRatingQuestion }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    question: { phpName: Question, type: LONGVARCHAR, required: true }
+    question_ja: { phpName: QuestionJa, type: LONGVARCHAR, required: true }
+    selections: { phpName: Selections, type: LONGVARCHAR, required: true }
+    selections_ja: { phpName: SelectionsJa, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_text:
+    _attributes: { phpName: AppText }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  app_user:
+    _attributes: { phpName: AppUser }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    email: { phpName: Email, type: LONGVARCHAR, required: true }
+    first_name: { phpName: FirstName, type: LONGVARCHAR, required: true }
+    last_name: { phpName: LastName, type: LONGVARCHAR, required: true }
+    password: { phpName: Password, type: LONGVARCHAR, required: true }
+    secret: { phpName: Secret, type: LONGVARCHAR, required: true }
+    validation_token: { phpName: ValidationToken, type: LONGVARCHAR, required: true }
+    approval_token: { phpName: ApprovalToken, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    expiration: { phpName: Expiration, type: TIMESTAMP, required: true, defaultValue: '2030-01-01 00:00:00' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  audio:
+    _attributes: { phpName: Audio }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    audio_category_id: { phpName: AudioCategoryId, type: INTEGER, size: '11', required: true }
+    audio_sub_category_id: { phpName: AudioSubCategoryId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    author: { phpName: Author, type: LONGVARCHAR, required: true }
+    duration: { phpName: Duration, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    rectangle_image_url: { phpName: RectangleImageUrl, type: LONGVARCHAR, required: true }
+    data_url: { phpName: DataUrl, type: LONGVARCHAR, required: true }
+    link_url: { phpName: LinkUrl, type: LONGVARCHAR, required: true }
+    data_size: { phpName: DataSize, type: INTEGER, size: '11', required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  audio_category:
+    _attributes: { phpName: AudioCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  audio_comment:
+    _attributes: { phpName: AudioComment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    audio_id: { phpName: AudioId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { audio_id: [audio_id] }
+  audio_like:
+    _attributes: { phpName: AudioLike }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    audio_id: { phpName: AudioId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id] }
+  audio_source:
+    _attributes: { phpName: AudioSource }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    audio_id: { phpName: AudioId, type: INTEGER, size: '11', required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    data_url: { phpName: DataUrl, type: LONGVARCHAR, required: true }
+    link_data_url: { phpName: LinkDataUrl, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true }
+    info: { phpName: Info, type: LONGVARCHAR, required: true }
+    result: { phpName: Result, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  audio_sub_category:
+    _attributes: { phpName: AudioSubCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    audio_category_id: { phpName: AudioCategoryId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  bank_account:
+    _attributes: { phpName: BankAccount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    routing_number: { phpName: RoutingNumber, type: LONGVARCHAR, required: true }
+    account_number: { phpName: AccountNumber, type: LONGVARCHAR, required: true }
+    account_name: { phpName: AccountName, type: LONGVARCHAR, required: true }
+    account_type: { phpName: AccountType, type: LONGVARCHAR, required: true }
+    street_address: { phpName: StreetAddress, type: LONGVARCHAR, required: true }
+    city: { phpName: City, type: LONGVARCHAR, required: true }
+    state: { phpName: State, type: LONGVARCHAR, required: true }
+    zip_code: { phpName: ZipCode, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  blog_category:
+    _attributes: { phpName: BlogCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  blog_post:
+    _attributes: { phpName: BlogPost }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    html: { phpName: Html, type: LONGVARCHAR, required: true }
+    blog_category_id: { phpName: BlogCategoryId, type: INTEGER, size: '11', required: true }
+    blog_sub_category_id: { phpName: BlogSubCategoryId, type: INTEGER, size: '11', required: true }
+    thumbnail_url: { phpName: ThumbnailUrl, type: LONGVARCHAR, required: true }
+    posted_at: { phpName: PostedAt, type: TIMESTAMP, required: false }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  blog_sub_category:
+    _attributes: { phpName: BlogSubCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    category_id: { phpName: CategoryId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  broadcast_notification:
+    _attributes: { phpName: BroadcastNotification }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    priority: { phpName: Priority, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    notification_group_id: { phpName: NotificationGroupId, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    badge: { phpName: Badge, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    result: { phpName: Result, type: LONGVARCHAR, required: true }
+    start_at: { phpName: StartAt, type: TIMESTAMP, required: false }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  bulletin:
+    _attributes: { phpName: Bulletin }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    start_at: { phpName: StartAt, type: TIMESTAMP, required: false }
+    end_at: { phpName: EndAt, type: TIMESTAMP, required: false }
+    index: { phpName: Index, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    background_color: { phpName: BackgroundColor, type: LONGVARCHAR, required: true }
+    text_color: { phpName: TextColor, type: LONGVARCHAR, required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  calendar:
+    _attributes: { phpName: Calendar }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    fixed_calendar_id: { phpName: FixedCalendarId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    yymmdd: { phpName: Yymmdd, type: INTEGER, size: '11', required: true }
+    data: { phpName: Data, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  calendar_day:
+    _attributes: { phpName: CalendarDay }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    year: { phpName: Year, type: INTEGER, size: '11', required: true }
+    month: { phpName: Month, type: INTEGER, size: '11', required: true }
+    day: { phpName: Day, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    mixed_ids: { phpName: MixedIds, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  calendar_month:
+    _attributes: { phpName: CalendarMonth }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    year: { phpName: Year, type: INTEGER, size: '11', required: true }
+    month: { phpName: Month, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    mixed_ids: { phpName: MixedIds, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  category:
+    _attributes: { phpName: Category }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    embed: { phpName: Embed, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    embed_url: { phpName: EmbedUrl, type: LONGVARCHAR, required: true }
+    disabled: { phpName: Disabled, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    youtube_playlist_id: { phpName: YoutubePlaylistId, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id] }
+  comment:
+    _attributes: { phpName: Comment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    body: { phpName: Body, type: LONGVARCHAR, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    user_id: { phpName: UserId, type: LONGVARCHAR, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  console_device_token:
+    _attributes: { phpName: ConsoleDeviceToken }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    app_creator_id: { phpName: AppCreatorId, type: INTEGER, size: '11', required: true }
+    token: { phpName: Token, type: LONGVARCHAR, required: true }
+    environment: { phpName: Environment, type: LONGVARCHAR, required: true }
+    os: { phpName: Os, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id], token: [token] }
+  console_log:
+    _attributes: { phpName: ConsoleLog }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    log: { phpName: Log, type: LONGVARCHAR, required: true }
+    value: { phpName: Value, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  console_login_log:
+    _attributes: { phpName: ConsoleLoginLog }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    user_name: { phpName: UserName, type: VARCHAR, size: '64', required: true }
+    ip: { phpName: Ip, type: VARCHAR, size: '16', required: true }
+    user_agent: { phpName: UserAgent, type: LONGVARCHAR, required: true }
+    accessed_at: { phpName: AccessedAt, type: TIMESTAMP, required: false }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { user_name: [user_name], accessed_at: [accessed_at] }
+  creator_notification:
+    _attributes: { phpName: CreatorNotification }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    badge: { phpName: Badge, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    mail_subject: { phpName: MailSubject, type: LONGVARCHAR, required: true }
+    mail_body: { phpName: MailBody, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  creator_notification_address:
+    _attributes: { phpName: CreatorNotificationAddress }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    email: { phpName: Email, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  delay:
+    _attributes: { phpName: Delay }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    level: { phpName: Level, type: INTEGER, size: '11', required: true }
+    due_at: { phpName: DueAt, type: TIMESTAMP, required: false }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  device_token:
+    _attributes: { phpName: DeviceToken }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    token: { phpName: Token, type: LONGVARCHAR, required: true }
+    adid: { phpName: Adid, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  exclusive_update_info:
+    _attributes: { phpName: ExclusiveUpdateInfo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    number_of_mixeds: { phpName: NumberOfMixeds, type: INTEGER, size: '11', required: true }
+    notified_at: { phpName: NotifiedAt, type: TIMESTAMP, required: false }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  extra_data:
+    _attributes: { phpName: ExtraData }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    data: { phpName: Data, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  featured_video:
+    _attributes: { phpName: FeaturedVideo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    order: { phpName: Order, type: INTEGER, size: '11', required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  fixed_calendar:
+    _attributes: { phpName: FixedCalendar }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    display_name: { phpName: DisplayName, type: LONGVARCHAR, required: true }
+    short_name: { phpName: ShortName, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    purchase_description: { phpName: PurchaseDescription, type: LONGVARCHAR, required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  fixed_calendar_message:
+    _attributes: { phpName: FixedCalendarMessage }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    fixed_calendar_id: { phpName: FixedCalendarId, type: LONGVARCHAR, required: true }
+    target_day: { phpName: TargetDay, type: INTEGER, size: '11', required: false }
+    action: { phpName: Action, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    link_url: { phpName: LinkUrl, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  forum:
+    _attributes: { phpName: Forum }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    number_of_likes: { phpName: NumberOfLikes, type: INTEGER, size: '11', required: true }
+    number_of_comments: { phpName: NumberOfComments, type: INTEGER, size: '11', required: true }
+    number_of_pictures: { phpName: NumberOfPictures, type: INTEGER, size: '11', required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  forum_group:
+    _attributes: { phpName: ForumGroup }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    forum_group_category_id: { phpName: ForumGroupCategoryId, type: INTEGER, size: '11', required: true }
+    forum_id: { phpName: ForumId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    number_of_members: { phpName: NumberOfMembers, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  forum_group_category:
+    _attributes: { phpName: ForumGroupCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  forum_group_entry:
+    _attributes: { phpName: ForumGroupEntry }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    forum_group_id: { phpName: ForumGroupId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { forum_group_id: [forum_group_id], social_user_id: [social_user_id] }
+  forum_user_permission:
+    _attributes: { phpName: ForumUserPermission }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    forum_id: { phpName: ForumId, type: INTEGER, size: '11', required: true }
+    permission: { phpName: Permission, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  gcm_register:
+    _attributes: { phpName: GcmRegister }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    token: { phpName: Token, type: LONGVARCHAR, required: true }
+    adid: { phpName: Adid, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  genre:
+    _attributes: { phpName: Genre }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  iab_token:
+    _attributes: { phpName: IabToken }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    token: { phpName: Token, type: LONGVARCHAR, required: true }
+    adid: { phpName: Adid, type: LONGVARCHAR, required: true }
+    start_time: { phpName: StartTime, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id], token: [token] }
+  inquiry:
+    _attributes: { phpName: Inquiry }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    inquiry_set_id: { phpName: InquirySetId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    user_name: { phpName: UserName, type: LONGVARCHAR, required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    ip_address: { phpName: IpAddress, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  inquiry_set:
+    _attributes: { phpName: InquirySet }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    token: { phpName: Token, type: LONGVARCHAR, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    email: { phpName: Email, type: LONGVARCHAR, required: true }
+    subject: { phpName: Subject, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  itunes_sales:
+    _attributes: { phpName: ItunesSales }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    provider: { phpName: Provider, type: LONGVARCHAR, required: true }
+    provider_country: { phpName: ProviderCountry, type: LONGVARCHAR, required: true }
+    sku: { phpName: Sku, type: LONGVARCHAR, required: true }
+    developer: { phpName: Developer, type: LONGVARCHAR, required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    version: { phpName: Version, type: LONGVARCHAR, required: true }
+    product_type_identifier: { phpName: ProductTypeIdentifier, type: LONGVARCHAR, required: true }
+    units: { phpName: Units, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    developer_proceeds: { phpName: DeveloperProceeds, type: LONGVARCHAR, required: true }
+    begin_date: { phpName: BeginDate, type: DATE, required: false }
+    end_date: { phpName: EndDate, type: DATE, required: false }
+    customer_currency: { phpName: CustomerCurrency, type: LONGVARCHAR, required: true }
+    country_code: { phpName: CountryCode, type: LONGVARCHAR, required: true }
+    currency_of_proceeds: { phpName: CurrencyOfProceeds, type: LONGVARCHAR, required: true }
+    apple_identifier: { phpName: AppleIdentifier, type: LONGVARCHAR, required: true }
+    customer_price: { phpName: CustomerPrice, type: LONGVARCHAR, required: true }
+    promo_code: { phpName: PromoCode, type: LONGVARCHAR, required: true }
+    parent_identifier: { phpName: ParentIdentifier, type: LONGVARCHAR, required: true }
+    subscription: { phpName: Subscription, type: LONGVARCHAR, required: true }
+    period: { phpName: Period, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  like_video:
+    _attributes: { phpName: LikeVideo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    user_id: { phpName: UserId, type: LONGVARCHAR, required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  live:
+    _attributes: { phpName: Live }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    composer: { phpName: Composer, type: LONGVARCHAR, required: true }
+    duration: { phpName: Duration, type: INTEGER, size: '11', required: true }
+    expired_at: { phpName: ExpiredAt, type: TIMESTAMP, required: false }
+    explanation: { phpName: Explanation, type: LONGVARCHAR, required: true }
+    genre_id: { phpName: GenreId, type: INTEGER, size: '11', required: true }
+    has_preview: { phpName: HasPreview, type: INTEGER, size: '11', required: true }
+    is_priced: { phpName: IsPriced, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true }
+    sub_title: { phpName: SubTitle, type: LONGVARCHAR, required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    rating: { phpName: Rating, type: INTEGER, size: '11', required: true }
+    share_text: { phpName: ShareText, type: LONGVARCHAR, required: true }
+    thumbnail_url: { phpName: ThumbnailUrl, type: LONGVARCHAR, required: true }
+    thumbnail_size: { phpName: ThumbnailSize, type: INTEGER, size: '11', required: true }
+    preview_url: { phpName: PreviewUrl, type: LONGVARCHAR, required: true }
+    preview_size: { phpName: PreviewSize, type: INTEGER, size: '11', required: true }
+    preview_key: { phpName: PreviewKey, type: LONGVARCHAR, required: true }
+    drm_preview_url: { phpName: DrmPreviewUrl, type: LONGVARCHAR, required: true }
+    drm_preview_size: { phpName: DrmPreviewSize, type: INTEGER, size: '11', required: true }
+    drm_preview_key: { phpName: DrmPreviewKey, type: LONGVARCHAR, required: true }
+    video_url: { phpName: VideoUrl, type: LONGVARCHAR, required: true }
+    video_size: { phpName: VideoSize, type: INTEGER, size: '11', required: true }
+    video_key: { phpName: VideoKey, type: LONGVARCHAR, required: true }
+    pending: { phpName: Pending, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  mcn:
+    _attributes: { phpName: Mcn }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    api_key: { phpName: ApiKey, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  message:
+    _attributes: { phpName: Message }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    user_id: { phpName: UserId, type: LONGVARCHAR, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    email: { phpName: Email, type: LONGVARCHAR, required: true }
+    zip: { phpName: Zip, type: LONGVARCHAR, required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  mixed:
+    _attributes: { phpName: Mixed }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    mixed_category_id: { phpName: MixedCategoryId, type: INTEGER, size: '11', required: true }
+    mixed_sub_category_id: { phpName: MixedSubCategoryId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    content_id: { phpName: ContentId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_type: { phpName: DisplayType, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    display_name: { phpName: DisplayName, type: LONGVARCHAR, required: true }
+    thumbnail_url: { phpName: ThumbnailUrl, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    status_text: { phpName: StatusText, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id] }
+  mixed_category:
+    _attributes: { phpName: MixedCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  mixed_sub_category:
+    _attributes: { phpName: MixedSubCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    mixed_category_id: { phpName: MixedCategoryId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  monthly_payment:
+    _attributes: { phpName: MonthlyPayment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    payment_account_id: { phpName: PaymentAccountId, type: INTEGER, size: '11', required: true }
+    monthly_revenue_id: { phpName: MonthlyRevenueId, type: INTEGER, size: '11', required: true }
+    year_month: { phpName: YearMonth, type: LONGVARCHAR, required: true }
+    amount: { phpName: Amount, type: LONGVARCHAR, required: true }
+    memo: { phpName: Memo, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  monthly_revenue:
+    _attributes: { phpName: MonthlyRevenue }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    payment_account_id: { phpName: PaymentAccountId, type: INTEGER, size: '11', required: true }
+    year_month: { phpName: YearMonth, type: LONGVARCHAR, required: true }
+    ios_amount: { phpName: IosAmount, type: LONGVARCHAR, required: true }
+    android_amount: { phpName: AndroidAmount, type: LONGVARCHAR, required: true }
+    share: { phpName: Share, type: INTEGER, size: '11', required: true, defaultValue: '50' }
+    ios_share_amount: { phpName: IosShareAmount, type: LONGVARCHAR, required: true }
+    android_share_amount: { phpName: AndroidShareAmount, type: LONGVARCHAR, required: true }
+    total_share_amount: { phpName: TotalShareAmount, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    modified: { phpName: Modified, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  music:
+    _attributes: { phpName: Music }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    duration: { phpName: Duration, type: INTEGER, size: '11', required: true }
+    expired_at: { phpName: ExpiredAt, type: TIMESTAMP, required: false }
+    explanation: { phpName: Explanation, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true }
+    sub_title: { phpName: SubTitle, type: LONGVARCHAR, required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    sample_url: { phpName: SampleUrl, type: LONGVARCHAR, required: true }
+    sample_size: { phpName: SampleSize, type: INTEGER, size: '11', required: true }
+    music_url: { phpName: MusicUrl, type: LONGVARCHAR, required: true }
+    music_size: { phpName: MusicSize, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+  new_notification:
+    _attributes: { phpName: NewNotification }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    flag: { phpName: Flag, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id] }
+  notification:
+    _attributes: { phpName: Notification }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    finished: { phpName: Finished, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  notification_group:
+    _attributes: { phpName: NotificationGroup }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  notification_group_member:
+    _attributes: { phpName: NotificationGroupMember }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    notification_group_id: { phpName: NotificationGroupId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { notification_group_id: [notification_group_id] }
+  payment_account:
+    _attributes: { phpName: PaymentAccount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    email: { phpName: Email, type: LONGVARCHAR, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    share: { phpName: Share, type: INTEGER, size: '11', required: true, defaultValue: '50' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  payment_mail:
+    _attributes: { phpName: PaymentMail }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    email: { phpName: Email, type: LONGVARCHAR, required: true }
+    subject: { phpName: Subject, type: LONGVARCHAR, required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    start_year_month: { phpName: StartYearMonth, type: LONGVARCHAR, required: true }
+    end_year_month: { phpName: EndYearMonth, type: LONGVARCHAR, required: true }
+    number_of_attached_files: { phpName: NumberOfAttachedFiles, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  pdf:
+    _attributes: { phpName: Pdf }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    explanation: { phpName: Explanation, type: LONGVARCHAR, required: true }
+    pdf_category_id: { phpName: PdfCategoryId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    pdf_sub_category_id: { phpName: PdfSubCategoryId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    thumbnail_url: { phpName: ThumbnailUrl, type: LONGVARCHAR, required: true }
+    thumbnail_size: { phpName: ThumbnailSize, type: INTEGER, size: '11', required: true }
+    token: { phpName: Token, type: LONGVARCHAR, required: true }
+    pdf_url: { phpName: PdfUrl, type: LONGVARCHAR, required: true }
+    pdf_size: { phpName: PdfSize, type: INTEGER, size: '11', required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+  pdf_category:
+    _attributes: { phpName: PdfCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  pdf_source:
+    _attributes: { phpName: PdfSource }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    pdf_id: { phpName: PdfId, type: INTEGER, size: '11', required: true }
+    url: { phpName: Url, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true }
+    info: { phpName: Info, type: LONGVARCHAR, required: true }
+    result: { phpName: Result, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  pdf_sub_category:
+    _attributes: { phpName: PdfSubCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    pdf_category_id: { phpName: PdfCategoryId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture:
+    _attributes: { phpName: Picture }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    forum_id: { phpName: ForumId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    number_of_likes: { phpName: NumberOfLikes, type: INTEGER, size: '11', required: true }
+    url: { phpName: Url, type: LONGVARCHAR, required: true }
+    snap_url: { phpName: SnapUrl, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { forum_id: [forum_id], social_user_id: [social_user_id], created_at: [created_at] }
+  picture_comment:
+    _attributes: { phpName: PictureComment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    picture_id: { phpName: PictureId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { picture_id: [picture_id], created_at: [created_at] }
+  picture_comment_count:
+    _attributes: { phpName: PictureCommentCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture_comment_muu_count:
+    _attributes: { phpName: PictureCommentMuuCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture_comment_uu_count:
+    _attributes: { phpName: PictureCommentUuCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture_comment_wuu_count:
+    _attributes: { phpName: PictureCommentWuuCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture_count:
+    _attributes: { phpName: PictureCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture_like:
+    _attributes: { phpName: PictureLike }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    picture_id: { phpName: PictureId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id], created_at: [created_at] }
+  picture_muu_count:
+    _attributes: { phpName: PictureMuuCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture_uu_count:
+    _attributes: { phpName: PictureUuCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  picture_wuu_count:
+    _attributes: { phpName: PictureWuuCount }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    date: { phpName: Date, type: DATE, required: true }
+    count: { phpName: Count, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  program:
+    _attributes: { phpName: Program }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    author: { phpName: Author, type: LONGVARCHAR, required: true }
+    duration: { phpName: Duration, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    small_image_url: { phpName: SmallImageUrl, type: LONGVARCHAR, required: true }
+    large_image_url: { phpName: LargeImageUrl, type: LONGVARCHAR, required: true }
+    data_url: { phpName: DataUrl, type: LONGVARCHAR, required: true }
+    data_size: { phpName: DataSize, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  program_comment:
+    _attributes: { phpName: ProgramComment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    program_id: { phpName: ProgramId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { program_id: [program_id] }
+  program_like:
+    _attributes: { phpName: ProgramLike }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    program_id: { phpName: ProgramId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id] }
+  program_source:
+    _attributes: { phpName: ProgramSource }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    program_id: { phpName: ProgramId, type: INTEGER, size: '11', required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    data_url: { phpName: DataUrl, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true }
+    info: { phpName: Info, type: LONGVARCHAR, required: true }
+    result: { phpName: Result, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  purchased_video:
+    _attributes: { phpName: PurchasedVideo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    user_id: { phpName: UserId, type: INTEGER, size: '11', required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  question:
+    _attributes: { phpName: Question }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    text: { phpName: Text, type: LONGVARCHAR, required: true }
+    number_of_likes: { phpName: NumberOfLikes, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    answer_kind: { phpName: AnswerKind, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    answer_id: { phpName: AnswerId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    answered_at: { phpName: AnsweredAt, type: TIMESTAMP, required: false }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  question_like:
+    _attributes: { phpName: QuestionLike }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    question_id: { phpName: QuestionId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id] }
+  recipe:
+    _attributes: { phpName: Recipe }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    recipe_category_id: { phpName: RecipeCategoryId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    ingredients: { phpName: Ingredients, type: LONGVARCHAR, required: true }
+    directions: { phpName: Directions, type: LONGVARCHAR, required: true }
+    nutrition: { phpName: Nutrition, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  recipe_category:
+    _attributes: { phpName: RecipeCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  remote_command:
+    _attributes: { phpName: RemoteCommand }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    secret: { phpName: Secret, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true }
+    params: { phpName: Params, type: LONGVARCHAR, required: true }
+    result: { phpName: Result, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  report:
+    _attributes: { phpName: Report }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    report_set_id: { phpName: ReportSetId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: false }
+    content: { phpName: Content, type: INTEGER, size: '11', required: false }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  report_address:
+    _attributes: { phpName: ReportAddress }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    email: { phpName: Email, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  report_set:
+    _attributes: { phpName: ReportSet }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: false }
+    content: { phpName: Content, type: INTEGER, size: '11', required: false }
+    removed: { phpName: Removed, type: INTEGER, size: '11', required: false, defaultValue: '0' }
+    last_reported_at: { phpName: LastReportedAt, type: TIMESTAMP, required: false }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  revenue:
+    _attributes: { phpName: Revenue }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    year: { phpName: Year, type: INTEGER, size: '11', required: true }
+    month: { phpName: Month, type: INTEGER, size: '11', required: true }
+    ios: { phpName: Ios, type: DOUBLE, required: true }
+    android: { phpName: Android, type: DOUBLE, required: true }
+    etc: { phpName: Etc, type: DOUBLE, required: true }
+    etc_description: { phpName: EtcDescription, type: LONGVARCHAR, required: true }
+    ratio: { phpName: Ratio, type: FLOAT, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sell_audio:
+    _attributes: { phpName: SellAudio }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    audio_id: { phpName: AudioId, type: INTEGER, size: '11', required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    price_text: { phpName: PriceText, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    button: { phpName: Button, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '2' }
+    status_text: { phpName: StatusText, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sell_item_category:
+    _attributes: { phpName: SellItemCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    target_category_id: { phpName: TargetCategoryId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sell_pdf:
+    _attributes: { phpName: SellPdf }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    pdf_id: { phpName: PdfId, type: INTEGER, size: '11', required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    price_text: { phpName: PriceText, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    button: { phpName: Button, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '2' }
+    status_text: { phpName: StatusText, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sell_section_category:
+    _attributes: { phpName: SellSectionCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sell_section_item:
+    _attributes: { phpName: SellSectionItem }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    sell_section_category_id: { phpName: SellSectionCategoryId, type: INTEGER, size: '11', required: true }
+    sell_section_sub_category_id: { phpName: SellSectionSubCategoryId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    content_id: { phpName: ContentId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '2' }
+    status_text: { phpName: StatusText, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sell_video:
+    _attributes: { phpName: SellVideo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    price_text: { phpName: PriceText, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    button: { phpName: Button, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '2' }
+    status_text: { phpName: StatusText, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sf_guard_group:
+    _attributes: { phpName: SfGuardGroup }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: VARCHAR, size: '255', required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: false }
+    _uniques: { sf_guard_group_U_1: [name] }
+  sf_guard_group_permission:
+    _attributes: { phpName: SfGuardGroupPermission }
+    group_id: { phpName: GroupId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sf_guard_group, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    permission_id: { phpName: PermissionId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sf_guard_permission, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    _indexes: { sf_guard_group_permission_FI_2: [permission_id] }
+  sf_guard_permission:
+    _attributes: { phpName: SfGuardPermission }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: VARCHAR, size: '255', required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: false }
+    _uniques: { sf_guard_permission_U_1: [name] }
+  sf_guard_remember_key:
+    _attributes: { phpName: SfGuardRememberKey }
+    user_id: { phpName: UserId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    remember_key: { phpName: RememberKey, type: VARCHAR, size: '32', required: false }
+    ip_address: { phpName: IpAddress, type: VARCHAR, size: '50', primaryKey: true, required: true }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+  sf_guard_user:
+    _attributes: { phpName: SfGuardUser }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    username: { phpName: Username, type: VARCHAR, size: '128', required: true }
+    algorithm: { phpName: Algorithm, type: VARCHAR, size: '128', required: true, defaultValue: sha1 }
+    salt: { phpName: Salt, type: VARCHAR, size: '128', required: true }
+    password: { phpName: Password, type: VARCHAR, size: '128', required: true }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    last_login: { phpName: LastLogin, type: TIMESTAMP, required: false }
+    is_active: { phpName: IsActive, type: TINYINT, size: '4', required: true, defaultValue: '1' }
+    is_super_admin: { phpName: IsSuperAdmin, type: TINYINT, size: '4', required: true, defaultValue: '0' }
+    _uniques: { sf_guard_user_U_1: [username] }
+  sf_guard_user_group:
+    _attributes: { phpName: SfGuardUserGroup }
+    user_id: { phpName: UserId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    group_id: { phpName: GroupId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sf_guard_group, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    _indexes: { sf_guard_user_group_FI_2: [group_id] }
+  sf_guard_user_permission:
+    _attributes: { phpName: SfGuardUserPermission }
+    user_id: { phpName: UserId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    permission_id: { phpName: PermissionId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sf_guard_permission, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    _indexes: { sf_guard_user_permission_FI_2: [permission_id] }
+  skin_info:
+    _attributes: { phpName: SkinInfo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    picture_id: { phpName: PictureId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    skin_tone: { phpName: SkinTone, type: LONGVARCHAR, required: true }
+    skin_type: { phpName: SkinType, type: LONGVARCHAR, required: true }
+    eye_color: { phpName: EyeColor, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { forum_id: [picture_id], social_user_id: [social_user_id] }
+  social_follow:
+    _attributes: { phpName: SocialFollow }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    from_user: { phpName: FromUser, type: INTEGER, size: '11', required: true }
+    to_user: { phpName: ToUser, type: INTEGER, size: '11', required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { from: [from_user], to: [to_user] }
+  social_message:
+    _attributes: { phpName: SocialMessage }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    from_user: { phpName: FromUser, type: INTEGER, size: '11', required: true }
+    to_user: { phpName: ToUser, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    blocked: { phpName: Blocked, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { from_user: [from_user], to_user: [to_user] }
+  social_message_block:
+    _attributes: { phpName: SocialMessageBlock }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    blocked_user: { phpName: BlockedUser, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id], blocked_user: [blocked_user] }
+  social_message_latest:
+    _attributes: { phpName: SocialMessageLatest }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    from_user: { phpName: FromUser, type: INTEGER, size: '11', required: true }
+    to_user: { phpName: ToUser, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    read_flag: { phpName: ReadFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    sent_at: { phpName: SentAt, type: TIMESTAMP, required: false }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { from_user: [from_user], to_user: [to_user] }
+  social_post:
+    _attributes: { phpName: SocialPost }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    reply_to: { phpName: ReplyTo, type: INTEGER, size: '11', required: true }
+    message: { phpName: Message, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  social_user:
+    _attributes: { phpName: SocialUser }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    secret: { phpName: Secret, type: LONGVARCHAR, required: true }
+    twitter_id: { phpName: TwitterId, type: LONGVARCHAR, required: true }
+    facebook_id: { phpName: FacebookId, type: LONGVARCHAR, required: true }
+    app_user_id: { phpName: AppUserId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    twitter_user: { phpName: TwitterUser, type: LONGVARCHAR, required: true }
+    profile_image: { phpName: ProfileImage, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    location: { phpName: Location, type: LONGVARCHAR, required: true }
+    latitude: { phpName: Latitude, type: INTEGER, size: '11', required: true }
+    longitude: { phpName: Longitude, type: INTEGER, size: '11', required: true }
+    block_level: { phpName: BlockLevel, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    number_of_pictures: { phpName: NumberOfPictures, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id] }
+  social_user_permission:
+    _attributes: { phpName: SocialUserPermission }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  stamp:
+    _attributes: { phpName: Stamp }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    back_palet: { phpName: BackPalet, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true, defaultValue: '99' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  stamp_image:
+    _attributes: { phpName: StampImage }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    stamp_id: { phpName: StampId, type: INTEGER, size: '11', required: true }
+    url: { phpName: Url, type: LONGVARCHAR, required: true }
+    back_palet: { phpName: BackPalet, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  store_receipt:
+    _attributes: { phpName: StoreReceipt }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    user_id: { phpName: UserId, type: LONGVARCHAR, required: true }
+    quantity: { phpName: Quantity, type: INTEGER, size: '11', required: true }
+    product_id: { phpName: ProductId, type: LONGVARCHAR, required: true }
+    transaction_id: { phpName: TransactionId, type: LONGVARCHAR, required: true }
+    purchase_date: { phpName: PurchaseDate, type: LONGVARCHAR, required: false }
+    original_transaction_id: { phpName: OriginalTransactionId, type: LONGVARCHAR, required: true }
+    original_purchase_date: { phpName: OriginalPurchaseDate, type: LONGVARCHAR, required: false }
+    app_item_id: { phpName: AppItemId, type: LONGVARCHAR, required: true }
+    version_external_identifier: { phpName: VersionExternalIdentifier, type: LONGVARCHAR, required: true }
+    bid: { phpName: Bid, type: LONGVARCHAR, required: true }
+    bvrs: { phpName: Bvrs, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  store_subscription_receipt:
+    _attributes: { phpName: StoreSubscriptionReceipt }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    user_id: { phpName: UserId, type: LONGVARCHAR, required: true }
+    quantity: { phpName: Quantity, type: INTEGER, size: '11', required: true }
+    product_id: { phpName: ProductId, type: LONGVARCHAR, required: true }
+    transaction_id: { phpName: TransactionId, type: LONGVARCHAR, required: true }
+    purchase_date: { phpName: PurchaseDate, type: LONGVARCHAR, required: false }
+    original_transaction_id: { phpName: OriginalTransactionId, type: LONGVARCHAR, required: true }
+    original_purchase_date: { phpName: OriginalPurchaseDate, type: LONGVARCHAR, required: false }
+    app_item_id: { phpName: AppItemId, type: LONGVARCHAR, required: true }
+    version_external_identifier: { phpName: VersionExternalIdentifier, type: LONGVARCHAR, required: true }
+    bid: { phpName: Bid, type: LONGVARCHAR, required: true }
+    bvrs: { phpName: Bvrs, type: LONGVARCHAR, required: true }
+    expires_date: { phpName: ExpiresDate, type: LONGVARCHAR, required: true }
+    latest_receipt: { phpName: LatestReceipt, type: LONGVARCHAR, required: true }
+    latest_receipt_info: { phpName: LatestReceiptInfo, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  sub_category:
+    _attributes: { phpName: SubCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    category_id: { phpName: CategoryId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  swatch:
+    _attributes: { phpName: Swatch }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    picture_id: { phpName: PictureId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    number_of_likes: { phpName: NumberOfLikes, type: INTEGER, size: '11', required: true }
+    base_url: { phpName: BaseUrl, type: LONGVARCHAR, required: true }
+    image1: { phpName: Image1, type: LONGVARCHAR, required: true }
+    image2: { phpName: Image2, type: LONGVARCHAR, required: true }
+    image3: { phpName: Image3, type: LONGVARCHAR, required: true }
+    image4: { phpName: Image4, type: LONGVARCHAR, required: true }
+    image5: { phpName: Image5, type: LONGVARCHAR, required: true }
+    thumbnail1: { phpName: Thumbnail1, type: LONGVARCHAR, required: true }
+    thumbnail2: { phpName: Thumbnail2, type: LONGVARCHAR, required: true }
+    thumbnail3: { phpName: Thumbnail3, type: LONGVARCHAR, required: true }
+    thumbnail4: { phpName: Thumbnail4, type: LONGVARCHAR, required: true }
+    thumbnail5: { phpName: Thumbnail5, type: LONGVARCHAR, required: true }
+    product_name: { phpName: ProductName, type: LONGVARCHAR, required: true }
+    category: { phpName: Category, type: LONGVARCHAR, required: true }
+    brand: { phpName: Brand, type: LONGVARCHAR, required: true }
+    rating: { phpName: Rating, type: INTEGER, size: '11', required: true }
+    skin_tone: { phpName: SkinTone, type: LONGVARCHAR, required: true }
+    skin_type: { phpName: SkinType, type: LONGVARCHAR, required: true }
+    eye_color: { phpName: EyeColor, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { forum_id: [picture_id], social_user_id: [social_user_id] }
+  swatch_comment:
+    _attributes: { phpName: SwatchComment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    swatch_id: { phpName: SwatchId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { swatch_id: [swatch_id] }
+  template_forum:
+    _attributes: { phpName: TemplateForum }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  template_info:
+    _attributes: { phpName: TemplateInfo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  template_mixed:
+    _attributes: { phpName: TemplateMixed }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  template_subscription:
+    _attributes: { phpName: TemplateSubscription }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: LONGVARCHAR, required: true }
+    layout: { phpName: Layout, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: LONGVARCHAR, required: true }
+    right_image_url: { phpName: RightImageUrl, type: LONGVARCHAR, required: true }
+    upload_span: { phpName: UploadSpan, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id] }
+  template_web:
+    _attributes: { phpName: TemplateWeb }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  template_youtube:
+    _attributes: { phpName: TemplateYoutube }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    embed_flag: { phpName: EmbedFlag, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    embed_url: { phpName: EmbedUrl, type: LONGVARCHAR, required: true }
+    left_image_url: { phpName: LeftImageUrl, type: LONGVARCHAR, required: true }
+    right_image_url: { phpName: RightImageUrl, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  textline:
+    _attributes: { phpName: Textline }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    textline_package_id: { phpName: TextlinePackageId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    textline_category_id: { phpName: TextlineCategoryId, type: INTEGER, size: '11', required: true }
+    textline_sub_category_id: { phpName: TextlineSubCategoryId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    sub_title: { phpName: SubTitle, type: LONGVARCHAR, required: true }
+    text: { phpName: Text, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  textline_category:
+    _attributes: { phpName: TextlineCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    prefix: { phpName: Prefix, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  textline_package:
+    _attributes: { phpName: TextlinePackage }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    caption: { phpName: Caption, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  textline_sub_category:
+    _attributes: { phpName: TextlineSubCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    textline_category_id: { phpName: TextlineCategoryId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  theme:
+    _attributes: { phpName: Theme }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    product: { phpName: Product, type: LONGVARCHAR, required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    base_url: { phpName: BaseUrl, type: LONGVARCHAR, required: true }
+    thumbnail_name: { phpName: ThumbnailName, type: LONGVARCHAR, required: true }
+    screenshots: { phpName: Screenshots, type: LONGVARCHAR, required: true }
+    images: { phpName: Images, type: LONGVARCHAR, required: true }
+    top_color: { phpName: TopColor, type: LONGVARCHAR, required: true }
+    top_text_color: { phpName: TopTextColor, type: LONGVARCHAR, required: true }
+    top_text_font: { phpName: TopTextFont, type: LONGVARCHAR, required: true }
+    top_text_size: { phpName: TopTextSize, type: LONGVARCHAR, required: true }
+    base_text_color: { phpName: BaseTextColor, type: LONGVARCHAR, required: true }
+    link_text_color: { phpName: LinkTextColor, type: LONGVARCHAR, required: true }
+    background_color: { phpName: BackgroundColor, type: LONGVARCHAR, required: true }
+    mask_color: { phpName: MaskColor, type: LONGVARCHAR, required: true }
+    post_text_color: { phpName: PostTextColor, type: LONGVARCHAR, required: true }
+    status_bar_color: { phpName: StatusBarColor, type: LONGVARCHAR, required: true }
+    status_bar_style: { phpName: StatusBarStyle, type: INTEGER, size: '11', required: true }
+    separator_color: { phpName: SeparatorColor, type: LONGVARCHAR, required: true }
+    text1_color: { phpName: Text1Color, type: LONGVARCHAR, required: true }
+    text2_color: { phpName: Text2Color, type: LONGVARCHAR, required: true }
+    text3_color: { phpName: Text3Color, type: LONGVARCHAR, required: true }
+    question_header_color: { phpName: QuestionHeaderColor, type: LONGVARCHAR, required: true }
+    question_header_text_color: { phpName: QuestionHeaderTextColor, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true, defaultValue: '99' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  ticket:
+    _attributes: { phpName: Ticket }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    transaction: { phpName: Transaction, type: LONGVARCHAR, required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    used_image_url: { phpName: UsedImageUrl, type: LONGVARCHAR, required: true }
+    used: { phpName: Used, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    code: { phpName: Code, type: LONGVARCHAR, required: true }
+    qualified_at: { phpName: QualifiedAt, type: TIMESTAMP, required: false }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  upload_video:
+    _attributes: { phpName: UploadVideo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    user_id: { phpName: UserId, type: LONGVARCHAR, required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  user_adid:
+    _attributes: { phpName: UserAdid }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    adid: { phpName: Adid, type: VARCHAR, size: '64', required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id], adid: [adid] }
+  user_device:
+    _attributes: { phpName: UserDevice }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    token: { phpName: Token, type: LONGVARCHAR, required: true }
+    environment: { phpName: Environment, type: LONGVARCHAR, required: true }
+    os: { phpName: Os, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id], token: [token] }
+  user_notification:
+    _attributes: { phpName: UserNotification }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    kick_user_id: { phpName: KickUserId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    read_flag: { phpName: ReadFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    social_message_id: { phpName: SocialMessageId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    picture_id: { phpName: PictureId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    picture_comment_id: { phpName: PictureCommentId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id], kick_user_id: [kick_user_id], read_flag: [read_flag], kind: [kind], picture_id: [picture_id] }
+  video:
+    _attributes: { phpName: Video }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    composer: { phpName: Composer, type: LONGVARCHAR, required: true }
+    duration: { phpName: Duration, type: INTEGER, size: '11', required: true }
+    expired_at: { phpName: ExpiredAt, type: TIMESTAMP, required: false }
+    explanation: { phpName: Explanation, type: LONGVARCHAR, required: true }
+    genre_id: { phpName: GenreId, type: INTEGER, size: '11', required: true }
+    video_category_id: { phpName: VideoCategoryId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    video_sub_category_id: { phpName: VideoSubCategoryId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    has_preview: { phpName: HasPreview, type: INTEGER, size: '11', required: true }
+    is_priced: { phpName: IsPriced, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true }
+    sub_title: { phpName: SubTitle, type: LONGVARCHAR, required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    rating: { phpName: Rating, type: INTEGER, size: '11', required: true }
+    share_text: { phpName: ShareText, type: LONGVARCHAR, required: true }
+    thumbnail_url: { phpName: ThumbnailUrl, type: LONGVARCHAR, required: true }
+    thumbnail_size: { phpName: ThumbnailSize, type: INTEGER, size: '11', required: true }
+    source_url: { phpName: SourceUrl, type: LONGVARCHAR, required: true }
+    preview_url: { phpName: PreviewUrl, type: LONGVARCHAR, required: true }
+    preview_size: { phpName: PreviewSize, type: INTEGER, size: '11', required: true }
+    preview_key: { phpName: PreviewKey, type: LONGVARCHAR, required: true }
+    drm_preview_url: { phpName: DrmPreviewUrl, type: LONGVARCHAR, required: true }
+    drm_preview_size: { phpName: DrmPreviewSize, type: INTEGER, size: '11', required: true }
+    drm_preview_key: { phpName: DrmPreviewKey, type: LONGVARCHAR, required: true }
+    zip_url: { phpName: ZipUrl, type: LONGVARCHAR, required: true }
+    zip_size: { phpName: ZipSize, type: INTEGER, size: '11', required: true }
+    zip_key: { phpName: ZipKey, type: LONGVARCHAR, required: true }
+    video_url: { phpName: VideoUrl, type: LONGVARCHAR, required: true }
+    video_size: { phpName: VideoSize, type: INTEGER, size: '11', required: true }
+    video_key: { phpName: VideoKey, type: LONGVARCHAR, required: true }
+    drm_video_url: { phpName: DrmVideoUrl, type: LONGVARCHAR, required: true }
+    drm_video_size: { phpName: DrmVideoSize, type: INTEGER, size: '11', required: true }
+    drm_video_key: { phpName: DrmVideoKey, type: LONGVARCHAR, required: true }
+    pending: { phpName: Pending, type: INTEGER, size: '11', required: true }
+    getglue_object: { phpName: GetglueObject, type: LONGVARCHAR, required: true }
+    landingpage: { phpName: Landingpage, type: LONGVARCHAR, required: true }
+    shorten_title: { phpName: ShortenTitle, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    status_text: { phpName: StatusText, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+  video_category:
+    _attributes: { phpName: VideoCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  video_comment:
+    _attributes: { phpName: VideoComment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { video_id: [video_id] }
+  video_like:
+    _attributes: { phpName: VideoLike }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id] }
+  video_source:
+    _attributes: { phpName: VideoSource }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    url: { phpName: Url, type: LONGVARCHAR, required: true }
+    image_url: { phpName: ImageUrl, type: LONGVARCHAR, required: true }
+    status: { phpName: Status, type: INTEGER, size: '11', required: true }
+    info: { phpName: Info, type: LONGVARCHAR, required: true }
+    result: { phpName: Result, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  video_sub_category:
+    _attributes: { phpName: VideoSubCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    video_category_id: { phpName: VideoCategoryId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  web:
+    _attributes: { phpName: Web }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    web_category_id: { phpName: WebCategoryId, type: INTEGER, size: '11', required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    url: { phpName: Url, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  web_category:
+    _attributes: { phpName: WebCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  weekday_text:
+    _attributes: { phpName: WeekdayText }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: LONGVARCHAR, required: true }
+    start_at: { phpName: StartAt, type: INTEGER, size: '11', required: false }
+    end_at: { phpName: EndAt, type: INTEGER, size: '11', required: false }
+    weekday: { phpName: Weekday, type: INTEGER, size: '11', required: true }
+    action: { phpName: Action, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    link_url: { phpName: LinkUrl, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  world_wide_info:
+    _attributes: { phpName: WorldWideInfo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    video_id: { phpName: VideoId, type: INTEGER, size: '11', required: true }
+    sales_amount: { phpName: SalesAmount, type: INTEGER, size: '11', required: true }
+    category_name: { phpName: CategoryName, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  youtube_additional_channel:
+    _attributes: { phpName: YoutubeAdditionalChannel }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    youtube_channel_id: { phpName: YoutubeChannelId, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  youtube_comment:
+    _attributes: { phpName: YoutubeComment }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    youtube_video_id: { phpName: YoutubeVideoId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    comment: { phpName: Comment, type: LONGVARCHAR, required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { youtube_video_id: [youtube_video_id] }
+  youtube_feed:
+    _attributes: { phpName: YoutubeFeed }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    id_url: { phpName: IdUrl, type: LONGVARCHAR, required: true }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    published: { phpName: Published, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  youtube_like:
+    _attributes: { phpName: YoutubeLike }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    youtube_video_id: { phpName: YoutubeVideoId, type: INTEGER, size: '11', required: true }
+    social_user_id: { phpName: SocialUserId, type: INTEGER, size: '11', required: true }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { social_user_id: [social_user_id] }
+  youtube_playlist_alt_name:
+    _attributes: { phpName: YoutubePlaylistAltName }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    youtube_playlist_id: { phpName: YoutubePlaylistId, type: LONGVARCHAR, required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+  youtube_user:
+    _attributes: { phpName: YoutubeUser }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    name: { phpName: Name, type: LONGVARCHAR, required: true }
+    auto_list: { phpName: AutoList, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    new_video_check: { phpName: NewVideoCheck, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    new_video_notified_at: { phpName: NewVideoNotifiedAt, type: TIMESTAMP, required: false }
+    del_flag: { phpName: DelFlag, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id] }
+  youtube_video:
+    _attributes: { phpName: YoutubeVideo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    app_id: { phpName: AppId, type: INTEGER, size: '11', required: true }
+    kind: { phpName: Kind, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    rating: { phpName: Rating, type: INTEGER, size: '11', required: true }
+    author: { phpName: Author, type: LONGVARCHAR, required: true }
+    duration: { phpName: Duration, type: INTEGER, size: '11', required: true }
+    expired_at: { phpName: ExpiredAt, type: TIMESTAMP, required: false }
+    title: { phpName: Title, type: LONGVARCHAR, required: true }
+    description: { phpName: Description, type: LONGVARCHAR, required: true }
+    category_id: { phpName: CategoryId, type: INTEGER, size: '11', required: true }
+    sub_category_id: { phpName: SubCategoryId, type: INTEGER, size: '11', required: true }
+    youtube_code: { phpName: YoutubeCode, type: LONGVARCHAR, required: true }
+    is_new: { phpName: IsNew, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    downloadable: { phpName: Downloadable, type: INTEGER, size: '11', required: true }
+    small_thumbnail_url: { phpName: SmallThumbnailUrl, type: LONGVARCHAR, required: true }
+    large_thumbnail_url: { phpName: LargeThumbnailUrl, type: LONGVARCHAR, required: true }
+    video_url: { phpName: VideoUrl, type: LONGVARCHAR, required: true }
+    video_size: { phpName: VideoSize, type: INTEGER, size: '11', required: true }
+    video_key: { phpName: VideoKey, type: LONGVARCHAR, required: true }
+    price: { phpName: Price, type: INTEGER, size: '11', required: true }
+    link_url: { phpName: LinkUrl, type: LONGVARCHAR, required: true }
+    display_order: { phpName: DisplayOrder, type: INTEGER, size: '11', required: true, defaultValue: '1' }
+    del_flg: { phpName: DelFlg, type: INTEGER, size: '11', required: true, defaultValue: '0' }
+    created_at: { phpName: CreatedAt, type: TIMESTAMP, required: false }
+    updated_at: { phpName: UpdatedAt, type: TIMESTAMP, required: false }
+    _indexes: { app_id: [app_id], created_at: [created_at], category_id: [category_id], del_flg: [del_flg] }

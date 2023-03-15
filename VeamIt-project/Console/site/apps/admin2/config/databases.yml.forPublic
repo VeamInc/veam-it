@@ -1,0 +1,7 @@
+all:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn: 'mysql:dbname=veam_preview;host=__DB_HOST_NAME__'
+      username: veam_preview
+      password: __PREVIEW_DB_PASSWORD__

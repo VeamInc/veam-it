@@ -1,0 +1,3 @@
+default:
+#  credentials: [[Admin,creator]]
+  is_secure: false

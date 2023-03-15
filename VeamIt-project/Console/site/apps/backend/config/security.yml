@@ -1,0 +1,16 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+all:
+  .settings:
+    enabled_modules: [default, sfGuardAuth]
+ 
+    # ...
+ 
+  .actions:
+    login_module:    sfGuardAuth
+    login_action:    signin
+
+default:
+  is_secure: true
+  credentials: admin

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+    <string name="language">en</string>
+
+    <string name="mcn_id" translatable="false">1</string>
+    <string name="AppId" translatable="false">31000287</string>
+    <string name="app_id" translatable="false">859006660835137</string><!-- for facebook sdk -->
+    <string name="app_name" translatable="false">Veam It!</string>
+    <string name="template_ids" translatable="false">8_1_2_7_3</string>
+    <string name="tab_title_1" translatable="false">YouTube</string>
+    <string name="template_title_1" translatable="false">YouTube</string>
+    <string name="tab_title_2" translatable="false">Forum</string>
+    <string name="template_title_2" translatable="false">Forum</string>
+    <string name="tab_title_3" translatable="false">Links</string>
+    <string name="template_title_3" translatable="false">Links</string>
+    <string name="tab_title_7" translatable="false">Contents</string>
+    <string name="template_title_7" translatable="false">Contents</string>
+    <string name="tab_title_8">Premium</string>
+    <string name="template_title_8">Premium</string>
+    <string name="tab_title_9" translatable="false">Shop</string>
+    <string name="template_title_9" translatable="false">Shop</string>
+    <string name="subscription_price_0" translatable="false">$0.99</string>
+    <string name="top_bar_height" translatable="false">45.0</string>
+    <string name="top_bar_title_font" translatable="false">HelveticaNeue</string>
+    <string name="top_bar_title_font_size" translatable="false">18.0</string>
+    <string name="new_videos_text" translatable="false">New Videos</string>
+    <string name="number_of_goodjob_images" translatable="false">10</string>
+    <string name="stored_alternative_image_ids" translatable="false">7323,7324,7325,7326,7327,7328,7329,7330,7331,7332,7333,7334,7335,7336,7337,7338,7339,7340,7341,7342,7343,7344,7345,7346,7347,7348,7349,7350,7351,7352,7353,7354,7355,7356,7357,7358,7359,7360,7361,7362,7363,7364,7365,7366,7367,7368,7369,7370,7371,7372,7373,7374,7375,7376,7377</string>
+    <string name="top_bar_color_argb" translatable="false">FF8B8B8B</string>
+    <string name="tab_text_color_argb" translatable="false">FF000000</string>
+    <string name="base_text_color_argb" translatable="false">FF000000</string>
+    <string name="base_background_color_argb" translatable="false">33FFFFFF</string>
+    <string name="new_videos_text_color_argb" translatable="false">FF130EFF</string>
+    <string name="table_selection_color_argb" translatable="false">30130EFF</string>
+    <string name="concept_color_argb" translatable="false">FF130EFF</string>
+
+    <string name="tag_key_focus" translatable="false">tag_key_focus</string>
+
+    <string name="admob_id_exclusive" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_id_playlistcategory" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_id_playlist" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_id_forumcategory" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_id_forum" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_id_forum_native" translatable="false">ca-app-pub-2879481225031994/7572628265</string>
+    <string name="admob_id_linkscategory" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_id_postpicture" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_id_postpicturecomment" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="PreviewDownloadTitie">Hang on just a sec,\nVideo downloading.</string>
+    <string name="PreviewDownloadDescription">Hit cancel to skip</string>
+    <string name="error_failed_to_open_movie">failed to open movie</string>
+    <string name="login_selection">Please pick an existing account to login &amp; join the forum!</string>
+    <string name="login">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="select">Select</string>
+    <string name="view_all_comments">view all %d comments</string>
+    <string name="close_all_comments">close all comments</string>
+    <string name="no_camera_available">No camera available</string>
+    <string name="external_storage_unavailable">External storage unavailable</string>
+    <string name="out_of_memory">Out of memory</string>
+    <string name="crop_not_supported">Your device doesn\'t support the crop action</string>
+    <string name="exclusive">Premium</string>
+    <string name="youtube">YouTube</string>
+    <string name="forum">Forum</string>
+    <string name="links">Links</string>
+    <string name="iab_setup_failed">Problem setting up in-app billing: </string>
+    <string name="iab_not_setup">Google Play In-app Billing is not set up.</string>
+    <string name="about_subscription">About Subscription</string>
+    <string name="already_purchased">already purchased</string>
+    <string name="purchase_cancelled">Error purchasing: </string>
+    <string name="updating">Updating...</string>
+    <string name="following">Following</string>
+    <string name="comment">Comment</string>
+    <string name="post">Post</string>
+    <string name="please_input_comment">Please input comments</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="are_you_sure_you_want_to_remove">Are you sure you want to remove?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="not_connected">Not connected</string>
+    <string name="report_inappropriate_photo">Report Inappropriate Photo</string>
+    <string name="why_are_you_reporting_this_photo">Why are you reporting this photo?</string>
+    <string name="report">Report</string>
+    <string name="my_favorites">My Favorites</string>
+    <string name="my_posts">My Posts</string>
+    <string name="edit">Edit</string>
+    <string name="next">Next</string>
+    <string name="add_a_caption">Add a caption</string>
+    <string name="share">Share</string>
+    <string name="please_add_a_caption">Please add a caption</string>
+    <string name="login_failed">Login failed</string>
+    <string name="release_to_refresh">Release to refresh</string>
+    <string name="profile">Profile</string>
+    <string name="followers">Followers</string>
+    <string name="i_am_following">Following</string>
+    <string name="do_follow">Follow</string>
+    <string name="done">Done</string>
+    <string name="not_logged_in">Not Logged In</string>
+    <string name="tap_to_edit_your_message">(Tap to edit your message)</string>
+    <string name="posts">Posts</string>
+    <string name="account_login">Account Login</string>
+    <string name="storage_settings">Storage Settings</string>
+    <string name="restore">Restore</string>
+    <string name="help">Help</string>
+    <string name="user_guide">User Guide</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="about_this_app">About This App</string>
+    <string name="settings">Settings</string>
+    <string name="warning">Warning</string>
+    <string name="logout_warning">Previous posts will not be shown on &quot;My Posts&quot; when using new account</string>
+    <string name="logout">Logout</string>
+    <string name="no_following">No Following</string>
+    <string name="message_sent">Message sent</string>
+    <string name="failed_to_send_message">Failed to send message</string>
+    <string name="exclusive_video">Premium Video</string>
+    <string name="forum_name_hot_topics">Hot Topics</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="second_ago">second ago</string>
+    <string name="seconds_ago">seconds ago</string>
+    <string name="minute_ago">minute ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="hour_ago">hour ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="day_ago">day ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="purchased">Purchased</string>
+
+    <string name="initial_tutorial_title_1">Welcome!!</string>
+    <string name="initial_tutorial_title_2">Tap bar below or Swipe</string>
+    <string name="initial_tutorial_title_3">Tap menu icon</string>
+    <string name="initial_tutorial_sub_title_1"></string>
+    <string name="initial_tutorial_sub_title_2">to switch Preview and Edit Mode</string>
+    <string name="initial_tutorial_sub_title_3">to customize and edit submission materials</string>
+    <string name="initial_tutorial_button_1">Next</string>
+    <string name="initial_tutorial_button_2">Got it!</string>
+    <string name="initial_tutorial_button_3">Got it!</string>
+    <string name="exclusive_upload">Premium - Upload</string>
+    <string name="sell_video_upload">Sell Video - Upload</string>
+    <string name="sell_pdf_upload">Sell Pdf - Upload</string>
+    <string name="sell_audio_upload">Sell Audio - Upload</string>
+    <string name="sell_section_item_upload">Content - Upload</string>
+    <string name="subscription_information">Subscription Information</string>
+    <string name="section_information">Section Information</string>
+    <string name="description_before_purchasing">Description before purchasing</string>
+    <string name="description_of_this_section">Description of this section</string>
+    <string name="set_the_price_monthly">Set the Price</string>
+    <string name="set_the_price">Set the Price</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="upload">Upload</string>
+    <string name="confirm">Confirm</string>
+    <string name="upload_audio_to_veam_cloud">Upload Audio to Veam Cloud</string>
+    <string name="title">Title</string>
+    <string name="audio_data_url">Audio Data URL</string>
+    <string name="image_data_url">Image Data URL</string>
+    <string name="pdf_data_url">PDF Data URL</string>
+    <string name="upload_video_to_veam_cloud">Upload Video to Veam Cloud</string>
+    <string name="upload_pdf_to_veam_cloud">Upload Pdf to Veam Cloud</string>
+    <string name="video_data_url">Video Data URL</string>
+    <string name="edit_text">Edit text</string>
+    <string name="price">Price</string>
+    <string name="ppc_price">Price</string>
+    <string name="payment">Payment Type</string>
+    <string name="forum_theme">Forum - Theme</string>
+    <string name="add_new_theme">Add New Theme</string>
+    <string name="add_new_video">Add New Video</string>
+    <string name="add_new_pdf">Add New PDF</string>
+    <string name="add_new_audio">Add New Audio</string>
+    <string name="add_new_item">Add New Content</string>
+    <string name="theme_caption">Theme</string>
+    <string name="theme_title">Title</string>
+    <string name="links_url">Links - URL</string>
+    <string name="add_new_url">Add New URL</string>
+    <string name="link_caption">URL</string>
+    <string name="link_title">Title</string>
+    <string name="sell_content_category">Sell Content - Category</string>
+    <string name="add_new_category">Add New Category</string>
+    <string name="category_caption">Category</string>
+    <string name="category_title">Title</string>
+    <string name="category_kind">Kind</string>
+    <string name="SIDE_MENU_TITLE_PREVIEW">Back to Preview</string>
+    <string name="SIDE_MENU_TITLE_HOME">Back to Home</string>
+    <string name="SIDE_MENU_TITLE_DESIGN">Customize Your App Design</string>
+    <string name="SIDE_MENU_TITLE_FEATURE">Change Payment Type</string>
+    <string name="SIDE_MENU_TITLE_APP_INFO">Preparing for App Submission</string>
+    <string name="SIDE_MENU_TITLE_BANK_ACCOUNT">Register Bank Account</string>
+    <string name="SIDE_MENU_TITLE_HELP">Notifications</string>
+    <string name="SIDE_MENU_TITLE_INFORMATION">Information from Veam</string>
+    <string name="SIDE_MENU_TITLE_FAQ">Inquiry</string>
+    <string name="SIDE_MENU_TITLE_ABOUT">About This App</string>
+    <string name="SIDE_MENU_TITLE_SIGN_OUT">Sign out</string>
+    <string name="SIDE_MENU_TITLE_STATS">Stats</string>
+    <string name="SIDE_MENU_TITLE_TERMS">Accept the terms</string>
+    <string name="SIDE_MENU_TITLE_SUBMIT">App Submit</string>
+    <string name="SIDE_MENU_TITLE_DEPLOY">Publish</string>
+    <string name="customize_design_caption">Customize your app design</string>
+    <string name="customize_feature_caption">Change Payment Type</string>
+    <string name="customize_design_title_1">Splash &amp; Background image</string>
+    <string name="customize_design_description_1">Size : 640 x 1136 px (Portrait)</string>
+    <string name="customize_design_title_2">Basic Color</string>
+    <string name="customize_design_description_2"> </string>
+    <string name="customize_design_title_3">Icon image</string>
+    <string name="customize_design_description_3">Size : 1024 x 1024 px</string>
+    <string name="customize_design_title_4">Main image</string>
+    <string name="customize_design_description_4">Size : 1024 x 1024 px</string>
+    <string name="exclusive_tutorial">Premium - Tutorial</string>
+    <string name="exclusive_tutorial_title_1">Premium Section</string>
+    <string name="exclusive_tutorial_description_1">Users will pay monthly subscription fee\nto access. Post your premium content\n(voice or audio) to your devoted fans!</string>
+    <string name="exclusive_tutorial_title_2">Upload Premium Content</string>
+    <string name="exclusive_tutorial_description_2">Video or audio data accepted.\nPDF attachable for audio.\nMonthly update recommended</string>
+    <string name="exclusive_tutorial_title_3">Edit Subscription Blurb</string>
+    <string name="exclusive_tutorial_description_3">Blurb &amp; price will be shown to users\nbefore paying the monthly subscription</string>
+    <string name="exclusive_released_tutorial_title_1">Upload Premium Content</string>
+    <string name="exclusive_released_tutorial_description_1">Video or audio data accepted.\nPDF attachable for audio.\nMonthly update recommended</string>
+    <string name="youtube_tutorial">YouTube - Tutorial</string>
+    <string name="youtube_tutorial_title_1">Automatically Synced Playlist</string>
+    <string name="youtube_tutorial_description_1">YouTube playlists will be automatically\nsorted and synced in the app.\nAdd views to your YouTube videos.</string>
+    <string name="youtube_tutorial_title_2">Edit Playlist</string>
+    <string name="youtube_tutorial_description_2">Change list order, hide playlists</string>
+    <string name="forum_tutorial">Forum - Tutorial</string>
+    <string name="forum_tutorial_title_1">Interact with your Fans</string>
+    <string name="forum_tutorial_description_1">Instagram-like picture Forum\ndedicated to the app. Users log in\nwith Facebook or Twitter account.</string>
+    <string name="forum_tutorial_title_2">Pick Forum Themes</string>
+    <string name="forum_tutorial_description_2">Add topics you want the fans to post about</string>
+    <string name="forum_tutorial_title_3">Check out how it works</string>
+    <string name="forum_tutorial_description_3">Login with Facebook or Twitter account\nand check out how the Forum works.\nPosts in this app will be for test only.</string>
+    <string name="forum_released_tutorial_title_1">Interact with your Fans</string>
+    <string name="forum_released_tutorial_description_1">Instagram-like picture Forum\ndedicated to the app. Users log in\nwith Facebook or Twitter account.</string>
+    <string name="forum_released_tutorial_title_2">Pick Forum Themes</string>
+    <string name="forum_released_tutorial_description_2">Add topics you want the fans to post about</string>
+    <string name="links_tutorial">Links - Tutorial</string>
+    <string name="links_tutorial_title_1">Edit Social Media Links</string>
+    <string name="links_tutorial_description_1">Edit the URLs to forward app traffic to your\nsocial media, merch stores and blogs</string>
+    <string name="edit_your_app_information">Edit your app information</string>
+    <string name="app_store_details">Details</string>
+    <string name="app_store_reviews">Reviews</string>
+    <string name="app_store_related">Related</string>
+    <string name="app_store_description">Description</string>
+    <string name="app_store_information">Information</string>
+    <string name="app_store_info_seller">Seller</string>
+    <string name="app_store_info_developer">Developer</string>
+    <string name="app_store_info_category">Category</string>
+    <string name="app_store_info_updated">Updated</string>
+    <string name="app_store_info_version">Version</string>
+    <string name="app_store_info_size">Size</string>
+    <string name="app_store_info_rating">Rating</string>
+    <string name="app_store_info_compatibility">Compatibility</string>
+    <string name="app_store_info_compatibility_text">Requires iOS 6.0 or later.\nCompatible with iPhone, iPad, and iPod touch. This app is optimized for iPhone 5.</string>
+    <string name="app_store_in_app_purchases">In-App Purchases</string>
+    <string name="app_store_version_history">Version History</string>
+    <string name="app_store_developer_website">Developer Website</string>
+    <string name="app_store_privacy_policy">Privacy Policy</string>
+    <string name="app_store_developer_app">Developer Apps</string>
+    <string name="app_store_offers_iap">Offers In-App Purchases</string>
+    <string name="app_info_app_name">App Name</string>
+    <string name="app_info_store_app_name">Store App Name</string>
+    <string name="app_info_description">Description</string>
+    <string name="app_info_keywords">Keywords</string>
+    <string name="app_info_category">Category</string>
+    <string name="app_info_rating">Rating</string>
+    <string name="app_info_rating_caption">App Rating</string>
+    <string name="required_app_information">Required app information</string>
+    <string name="required_operations">Following operations required before submission</string>
+    <string name="required_operation_subscription">Subscription Contents</string>
+    <string name="required_operation_forum">Forum Themes</string>
+    <string name="required_operation_links">Links</string>
+    <string name="required_operation_terms">Accept the terms</string>
+    <string name="required_operation_description">App Store Description</string>
+    <string name="required_operation_subscription_description">Subscription Description</string>
+    <string name="required_operation_keywords">App Store Keywords</string>
+    <string name="required_operation_category">App Store Category</string>
+    <string name="required_operation_rating">App Store Rating</string>
+    <string name="required_operation_background">Splash &amp; Background image</string>
+    <string name="restore_title">Restore iTunes Purchases</string>
+    <string name="restore_description">If you have already use Veam app\nyou can recover purchased contents.</string>
+    <string name="about_video">About Video</string>
+    <string name="download_this_video">Download this video?</string>
+    <string name="about_audio">About Audio</string>
+    <string name="about_pdf">About PDF</string>
+    <string name="subscription">Subscription</string>
+    <string name="free_subscription">Free</string>
+    <string name="pay_per_content">Pay per content</string>
+    <string name="one_time_payment">One time payment for all content</string>
+    <string name="description">Description</string>
+    <string name="accept_the_terms">Accept the terms</string>
+    <string name="accepted">Accepted ✔</string>
+    <string name="accept">Accept</string>
+    <string name="accept_these_terms">Accept these terms?</string>
+    <string name="about_section">About Section</string>
+    <string name="shoot_a_video">Shoot a Video</string>
+
+    <string name="pick_your_favorite_color">Pick favorite color from ring &amp; tap square for brightness</string>
+
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+    <string name="delete_this">Delete this?</string>
+
+    <string name="notification_title">Notifications</string>
+    <string name="inquiry_title">Inquiry</string>
+
+    <string name="submit_confirmation_title">IMPORTANT!</string>
+    <string name="submit_confirmation">Please verify that the images and colors you chose in the Veam It! Publisher match your preferences. Once your app is submitted for review in the marketplaces, changing the images and colors requires a lengthy process that includes sending your new images to Veam for processing and re-submission. \n\n　　　　　　　　　      Veam Inc.</string>
+    <string name="submit_ok">Proceed to AppSubmit</string>
+    <string name="submit_cancel">Go Back and Check</string>
+
+</resources>

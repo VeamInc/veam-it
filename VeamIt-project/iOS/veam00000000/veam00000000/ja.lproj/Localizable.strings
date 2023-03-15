@@ -1,0 +1,306 @@
+/* 
+  Localizable.strings
+  veam00000000
+
+  Created by veam on 6/29/15.
+  Copyright (c) 2015 veam. All rights reserved.
+*/
+
+"initial_tutorial_title_1"="Welcome!!";
+"initial_tutorial_title_2"="メニューバーでモードを選択します";
+"initial_tutorial_title_3"="右上矢印をタップすると管理メニューが表示されます";
+"initial_tutorial_sub_title_1"="";
+"initial_tutorial_sub_title_2"="Preview ・・・ プレビュー\nEdit Mode ・・・       編集\nTutorial ・・・     操作説明";
+"initial_tutorial_sub_title_3"="アプリ設定、App Storeへの申請、\n利用規約、ヘルプ等";
+"initial_tutorial_button_1"="Next";
+"initial_tutorial_button_2"="Next";
+"initial_tutorial_button_3"="OK";
+
+"exclusive_upload"="Premiumコンテンツアップロード";
+"sell_video_upload"="ビデオアップロード";
+"sell_pdf_upload"="PDFアップロード";
+"sell_audio_upload"="オーディオアップロード";
+"sell_section_item_upload"="コンテンツアップロード";
+"subscription_information"="課金情報";
+"section_information"="課金情報";
+"description_before_purchasing"="課金説明";
+"description_of_this_section"="セクション説明";
+"set_the_price_monthly"="価格設定(月額)";
+"set_the_price"="価格設定";
+"payment_type"="課金種別";
+"upload"="アップロード";
+"confirm"="決定";
+"upload_audio_to_veam_cloud"="オーディオデータ アップロード";
+"title"="タイトル";
+"audio_data_url"="オーディオデータ";
+"image_data_url"="サムネイルデータ";
+"pdf_data_url"="PDFデータ";
+"upload_video_to_veam_cloud"="ビデオデータ アップロード";
+"upload_pdf_to_veam_cloud"="PDFデータ アップロード";
+"upload_audio_to_veam_cloud"="オーディオデータ アップロード";
+"video_data_url"="ビデオデータ";
+"edit_text"="Premiumコンテンツ課金に関する説明";
+"price"="月額会員料金";
+"ppc_price"="価格";
+"payment"="課金種別";
+"forum_theme"="Forum - テーマの編集";
+"add_new_theme"="テーマを追加";
+"add_new_video"="ビデオを追加";
+"add_new_pdf"="PDFをを追加";
+"add_new_audio"="オーディオをを追加";
+"add_new_item"="コンテンツを追加";
+"theme_caption"="テーマ追加";
+"theme_title"="テーマ名";
+"links_url"="Links - リンクの編集";
+"add_new_url"="リンクを追加";
+"link_caption"="リンク追加";
+"link_title"="タイトル";
+
+"sell_content_category"="都度課金 - カテゴリの編集";
+"add_new_category"="カテゴリを追加";
+"category_caption"="カテゴリ追加";
+"category_title"="タイトル";
+"category_kind"="種類";
+
+
+"SIDE_MENU_TITLE_PREVIEW"="プレビュー画面に戻る";
+"SIDE_MENU_TITLE_HOME"="ホーム画面に戻る";
+"SIDE_MENU_TITLE_DESIGN"="アプリをカスタマイズ";
+"SIDE_MENU_TITLE_FEATURE"="課金方式の変更";
+"SIDE_MENU_TITLE_APP_INFO"="APP STORE申請情報";
+"SIDE_MENU_TITLE_BANK_ACCOUNT"="Register Bank Account";
+"SIDE_MENU_TITLE_HELP"="通知";
+"SIDE_MENU_TITLE_INFORMATION"="Information from Veam";
+"SIDE_MENU_TITLE_FAQ"="問い合せ";
+"SIDE_MENU_TITLE_ABOUT"="About This App";
+"SIDE_MENU_TITLE_SIGN_OUT"="サインアウト";
+"SIDE_MENU_TITLE_STATS"="Stats";
+"SIDE_MENU_TITLE_TERMS"="利用規約";
+"SIDE_MENU_TITLE_SUBMIT"="APP STORE登録申請";
+"SIDE_MENU_TITLE_DEPLOY"="Publish";
+
+"customize_design_caption"="アプリのカスタマイズ";
+"customize_feature_caption"="課金方式の変更";
+
+
+"customize_design_title_1"="スプラッシュ画面&背景画像";
+"customize_design_description_1"="640 x 1136 ピクセル ポートレイト型";
+"customize_design_title_2"="イメージカラー";
+"customize_design_description_2"=" ";
+"customize_design_title_3"="アイコン画像";
+"customize_design_description_3"="1024 x 1024 ピクセル";
+"customize_design_title_4"="YouTubeのイメージ画像";
+"customize_design_description_4"="1024 x 1024 ピクセル";
+
+"exclusive_tutorial"="Premium - 操作ガイド";
+"exclusive_tutorial_title_1"="プレミアムコンテンツ";
+"exclusive_tutorial_description_1"="ユーザー(ファン)は月額料金を支払うことで\nプレミアムコンテンツ(動画or音声)を視聴できます";
+"exclusive_tutorial_title_2"="プレミアムコンテンツをアップロード";
+"exclusive_tutorial_description_2"="プレミアムコンテンツデータ(動画or音声)を\nアップロードします\nまた、音声の場合はPDF画像も添付できます";
+"exclusive_tutorial_title_3"="プレミアムコンテンツ課金の説明";
+"exclusive_tutorial_description_3"="ユーザーが月額課金を行う前に表示される説明文の\n編集、並びに月額課金額の設定を行えます";
+"exclusive_released_tutorial_title_1"="プレミアムコンテンツをアップロード";
+"exclusive_released_tutorial_description_1"="プレミアムコンテンツデータ(動画or音声)を\nアップロードします\nまた、音声の場合はPDF画像も添付できます";
+
+"youtube_tutorial"="YouTube - 操作ガイド";
+"youtube_tutorial_title_1"="YouTubeプレイリスト";
+"youtube_tutorial_description_1"="登録したYouTube Channel上のプレイリストが\n自動的にアプリ上にレイアウトされます";
+"youtube_tutorial_title_2"="プレイリストの管理";
+"youtube_tutorial_description_2"="表示されるプレイリストの順序変更や\n非表示設定が行えます";
+
+"forum_tutorial"="Forum - 操作ガイド";
+"forum_tutorial_title_1"="フォーラム";
+"forum_tutorial_description_1"="ファンからの投稿や交流が行なえます";
+"forum_tutorial_title_2"="テーマを設定する";
+"forum_tutorial_description_2"="ファン投稿のお題となるテーマを設定できます";
+"forum_tutorial_title_3"="写真を投稿する（テストモード）";
+"forum_tutorial_description_3"="Facebook、Twitterのアカウントでログインして\n投稿プロセスの確認ができます";
+"forum_released_tutorial_title_1"="フォーラム";
+"forum_released_tutorial_description_1"="ファンからの投稿や交流が行なえます";
+"forum_released_tutorial_title_2"="テーマを設定する";
+"forum_released_tutorial_description_2"="ファン投稿のお題となるテーマを設定できます";
+
+"links_tutorial"="Links - 操作ガイド";
+"links_tutorial_title_1"="リンクの編集";
+"links_tutorial_description_1"="SNSやWebサイト等へのリンクを自由に設定できます";
+
+"edit_your_app_information"="アプリ情報を編集";
+
+"app_store_details"="詳細";
+"app_store_reviews"="レビュー";
+"app_store_related"="関連";
+
+"app_store_description"="説明";
+"app_store_information"="情報";
+"app_store_info_seller"="販売元" ;
+"app_store_info_developer"="開発元" ;
+"app_store_info_category"="カテゴリ" ;
+"app_store_info_updated"="更新" ;
+"app_store_info_version"="バージョン" ;
+"app_store_info_size"="サイズ" ;
+"app_store_info_rating"="評価" ;
+"app_store_info_compatibility"="互換性" ;
+"app_store_info_compatibility_text"="iOS 6.0 以降。iPhone、iPad および iPod touch 対応。この App は iPhone 5 に最適化されています。";
+"app_store_in_app_purchases"="アプリ内課金";
+"app_store_version_history"="アップデート履歴";
+"app_store_developer_website"="このデベロッパのWebサイト";
+"app_store_privacy_policy"="プライバシーポリシー";
+"app_store_developer_app"="このデベロッパのその他のApp";
+"app_store_offers_iap"="App 内課金が有ります";
+
+"app_info_app_name"="アプリ名";
+"app_info_store_app_name"="ストアに表示するアプリ名";
+"app_info_description"="説明";
+"app_info_keywords"="キーワード";
+"app_info_category"="カテゴリ";
+"app_info_rating"="レーティング";
+"app_info_rating_caption"="アプリレーティング";
+
+"required_app_information"="アプリ情報";
+"required_operations"="アプリの申請を行う前に\n以下の作業を完了して下さい";
+
+"required_operation_subscription"="Premiumコンテンツのアップロード" ;
+"required_operation_subscription_description"="定期購読の説明" ;
+"required_operation_forum"="Forumのテーマ追加" ;
+"required_operation_links"="Linksにおけるリンクの確認・追加" ;
+"required_operation_terms"="利用許諾の承諾" ;
+"required_operation_description"="APP STOREのアプリ説明文" ;
+"required_operation_keywords"="APP STOREのキーワード入力" ;
+"required_operation_category"="APP STOREのカテゴリー選択" ;
+"required_operation_rating"="APP STOREのレーティング選択" ;
+"required_operation_background"="スプラッシュ画面&背景画像" ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"PreviewDownloadTitie"="映像ダウンロード中";
+"PreviewDownloadDescription"="キャンセルボタンで中断します。";
+"error_failed_to_open_movie"="映像の読み込みに失敗しました。";
+"login_selection"="FacebookもしくはTwitterのログインアカウントを入力するとフォーラムに参加できます。";
+"login"="ログイン";
+"cancel"="キャンセル";
+"select"="選択";
+"view_all_comments"="コメント%d件を全て表示";
+"close_all_comments"="コメントを隠す";
+"no_camera_available"="利用できるカメラがありません";
+"external_storage_unavailable"="外部ストレージが利用できません";
+"out_of_memory"="メモリ不足です";
+"crop_not_supported"="この端末は画像の切り出しをサポートしていません";
+"exclusive"="Premium";
+"youtube"="YouTube";
+"forum"="Forum";
+"links"="Links";
+"iab_setup_failed"="アプリ内課金の準備ができませんでした: ";
+"iab_not_setup"="アプリ内課金の準備ができていません";
+"about_subscription"="定期購読について";
+"already_purchased"="すでに購入済みです";
+"purchase_cancelled"="購入できませんでした: ";
+"updating"="更新中...";
+"following"="フォロー";
+"comment"="コメント";
+"post"="投稿";
+"please_input_comment"="コメントを入力してください";
+"confirmation"="確認";
+"are_you_sure_you_want_to_remove"="本当に削除しますか?";
+"yes"="はい";
+"no"="いいえ";
+"not_connected"="ネットワークに接続されていません";
+"report_inappropriate_photo"="不適切な画像を報告";
+"why_are_you_reporting_this_photo"="この画像が不適切な理由を入力してください";
+"report"="報告";
+"my_favorites"="お気に入り";
+"my_posts"="投稿履歴";
+"edit"="編集";
+"next"="次へ";
+"add_a_caption"="タイトルを追加";
+"share"="共有";
+"please_add_a_caption"="タイトルを追加してください";
+"login_failed"="Login failed";
+"release_to_refresh"="リリースして更新";
+"profile"="プロフィール";
+"followers"="フォロワー";
+"i_am_following"="フォロー中";
+"do_follow"="フォローする";
+"done"="完了";
+"not_logged_in"="ログインしていません";
+"tap_to_edit_your_message"="(タップしてメッセージを編集)";
+"posts"="投稿";
+"account_login"="ログインアカウント";
+"storage_settings"="課金設定";
+"restore"="リストア";
+"restore_title"="以前の購入の復元";
+"restore_description"="以前購入した課金情報を復元します。";
+"help"="ヘルプ";
+"user_guide"="ユーザガイド";
+"terms_of_service"="利用規約等";
+"about_this_app"="このアプリについて";
+"settings"="設定";
+"warning"="注意";
+"logout_warning"="ログアウトしてから別のアカウントでログインすると以前に投稿した自分の投稿は投稿履歴上に表示されなくなります";
+"logout"="ログアウト";
+"no_following"="フォローしていません";
+"message_sent"="送信しました";
+"failed_to_send_message"="送信に失敗しました";
+"exclusive_video"="Premium Video";
+"forum_name_hot_topics"="人気投稿";
+"go_to_settings"="設定";
+"second_ago"="秒前";
+"seconds_ago"="秒前";
+"minute_ago"="分前";
+"minutes_ago"="分前";
+"hour_ago"="時間前";
+"hours_ago"="時間前";
+"day_ago"="日前";
+"days_ago"="日前";
+"purchased"="購入済み";
+"about_video"="映像について";
+"download_this_video"="映像をダウンロードしますか？";
+"about_audio"="オーディオについて";
+"about_pdf"="PDFについて";
+
+
+"subscription"="定期購読";
+"free_subscription"="無料";
+"pay_per_content"="都度課金";
+"one_time_payment"="一括課金";
+"description"="説明";
+
+"accept_the_terms"="利用規約の承諾";
+"accepted"="承諾済 ✔";
+"accept"="承諾する";
+"accept_these_terms"="利用規約を承諾しますか?";
+
+"about_section"="ご利用について";
+
+"shoot_a_video"="ビデオを撮影する";
+
+"sign_up_with_an_email_address"="メールアドレスでサインアップ";
+"first_name"="名";
+"last_name"="姓";
+"email"="メールアドレス";
+"password"="パスワード";
+"profile_picture"="プロフィール画像";
+"create_account"="アカウント作成";
+"selected"="選択済み";
+"your_password_must_be_at_least_8_characters_long"="パスワードは8文字以上で入力してください。";
+"please_enter_your_mail_address"="メールアドレスを入力してください。";
+"reset_the_password"="パスワードをリセットしますか?";
+"forgot_password"="パスワードリセット";
+
+"notification_title"="通知";
+"inquiry_title"="Inquiry";
+
+"submit_confirmation_title"="重要!";
+"submit_confirmation"="画像イメージやアプリの色は、いまの設定でよろしいでしょうか？\n一度APP STORE登録申請をしますと次回以降画像並びに色を変更する場合は、Veam社にイメージ画像を送って頂くなど時間がかかります。\nいま一度ご確認下さい！";
+"submit_ok"="登録申請へと進む";
+"submit_cancel"="戻る";

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content id="1">
+    <youtube_exclusion_urls value="//pubads.g.doubleclick.net/pagead/conversion/" />
+    <pdf_viewer_url_format value="http://docs.google.com/gview?embedded=true&amp;url=%s" />
+    <app_name value="T005" />
+    <top_bar_color_argb value="FF8B8B8B" />
+    <tab_text_color_argb value="FF000000" />
+    <base_text_color_argb value="FF000000" />
+    <base_background_color_argb value="33FFFFFF" />
+    <new_videos_text_color_argb value="FF130EFF" />
+    <table_selection_color_argb value="30130EFF" />
+    <concept_color_argb value="FF130EFF" />
+    <template_ids value="8_1_2_3" />
+    <subscription_0_description value="Subscription services allow you to purchase access to the premium contents. The services are accessed only in this app, providing a rich, sophisticated and convenient user interface. Enjoy premium weekly voice message and monthly video!&#xA;&#xA;" />
+    <subscription_0_button_text value="Tap to subscribe - US$0.99 per/month" />
+    <email_to value="support@veam.co" />
+    <skip_initial value="0" />
+    <tab_title_8 value="Premium" />
+    <template_title_8 value="Premium" />
+    <template_subscription id="283"
+                           t="Premium"
+                           l="2"
+                           k="4"
+                           r="" />
+    <video_category id="290" name="Monthly Premium Video" />
+    <tab_title_1 value="YouTube" />
+    <template_title_1 value="YouTube" />
+    <template_youtube id="281"
+                      t="YouTube"
+                      e="0"
+                      u=""
+                      l=""
+                      r="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321145652_6223.png" />
+    <youtube_category id="5940"
+                      name="New Videos"
+                      kind="0"
+                      e="0"
+                      u="" />
+    <tab_title_2 value="Forum" />
+    <template_title_2 value="Forum" />
+    <template_forum id="281" t="Forum" />
+    <forum id="697" name="Hot Topics" kind="2" />
+    <forum id="699" name="Talk About Anything" kind="1" />
+    <forum id="698" name="Meet &amp; Greet" kind="1" />
+    <tab_title_3 value="Links" />
+    <template_title_3 value="Links" />
+    <template_web id="280" t="Links" />
+    <web id="599" c="0" u="https://www.facebook.com/" t="Facebook" />
+    <web id="600" c="0" u="https://twitter.com/" t="Twitter" />
+    <alternative_image id="7323" f="video_left.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/video_left.png" />
+    <alternative_image id="7324" f="share_twitter_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/share_twitter_on.png" />
+    <alternative_image id="7325" f="program_comment.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/program_comment.png" />
+    <alternative_image id="7326" f="goodjob.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/goodjob.png" />
+    <alternative_image id="7327" f="forum_like_button_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/forum_like_button_on.png" />
+    <alternative_image id="7328" f="grid_audio.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/grid_audio.png" />
+    <alternative_image id="7329" f="q_vote_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/q_vote_icon.png" />
+    <alternative_image id="7330" f="flame.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/flame.png" />
+    <alternative_image id="7331" f="share_facebook_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/share_facebook_on.png" />
+    <alternative_image id="7332" f="program_like.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/program_like.png" />
+    <alternative_image id="7333" f="pro_post_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/pro_post_icon.png" />
+    <alternative_image id="7334" f="list_following.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/list_following.png" />
+    <alternative_image id="7335" f="list_clip.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/list_clip.png" />
+    <alternative_image id="7336" f="audio_thumbnail.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/audio_thumbnail.png" />
+    <alternative_image id="7337" f="share_facebook_off.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/share_facebook_off.png" />
+    <alternative_image id="7338" f="select_back.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/select_back.png" />
+    <alternative_image id="7339" f="pro_settings.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/pro_settings.png" />
+    <alternative_image id="7340" f="share_twitter_off.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/share_twitter_off.png" />
+    <alternative_image id="7341" f="thankyou.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/thankyou.png" />
+    <alternative_image id="7342" f="forum_comment.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/forum_comment.png" />
+    <alternative_image id="7343" f="q_answer_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/q_answer_icon.png" />
+    <alternative_image id="7344" f="vote_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/vote_on.png" />
+    <alternative_image id="7345" f="video_thumbnail.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/video_thumbnail.png" />
+    <alternative_image id="7346" f="answer_audio_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/answer_audio_on.png" />
+    <alternative_image id="7347" f="grid_back2.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/grid_back2.png" />
+    <alternative_image id="7348" f="expand_comment.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/expand_comment.png" />
+    <alternative_image id="7349" f="report.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/report.png" />
+    <alternative_image id="7350" f="list_my_post.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/list_my_post.png" />
+    <alternative_image id="7351" f="grid_back1.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/grid_back1.png" />
+    <alternative_image id="7352" f="pro_follow.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/pro_follow.png" />
+    <alternative_image id="7353" f="check_box_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/check_box_on.png" />
+    <alternative_image id="7354" f="like.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/like.png" />
+    <alternative_image id="7355" f="q_ranking_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/q_ranking_icon.png" />
+    <alternative_image id="7356" f="calendar_dot2.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/calendar_dot2.png" />
+    <alternative_image id="7357" f="tab_selected_back.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/tab_selected_back.png" />
+    <alternative_image id="7358" f="pro_person_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/pro_person_icon.png" />
+    <alternative_image id="7359" f="grid_video.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/grid_video.png" />
+    <alternative_image id="7360" f="add_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/add_on.png" />
+    <alternative_image id="7361" f="answer_video_on.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/answer_video_on.png" />
+    <alternative_image id="7362" f="camera_button.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/camera_button.png" />
+    <alternative_image id="7363" f="q_video_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/q_video_icon.png" />
+    <alternative_image id="7364" f="t1_top_left.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/t1_top_left.png" />
+    <alternative_image id="7365" f="grid_year.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/grid_year.png" />
+    <alternative_image id="7366" f="tab_selected_back@2x.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/tab_selected_back@2x.png" />
+    <alternative_image id="7367" f="grid_back.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/grid_back.png" />
+    <alternative_image id="7368" f="default_grid_0.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/130EFF/default_grid_0.png" />
+    <alternative_image id="7369" f="c_veam_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321144954_1640.png" />
+    <alternative_image id="7370" f="t1_top_right.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321145652_6223.png" />
+    <alternative_image id="7371" f="t6_top_right.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321144954_1640.png" />
+    <alternative_image id="7372" f="t8_top_right.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321144954_1640.png" />
+    <alternative_image id="7373" f="c_small_icon.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321144954_8080_s.png" />
+    <alternative_image id="7374" f="background.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321145453_9139_b.png" />
+    <alternative_image id="7375" f="initial_background.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321145453_2752.png" />
+    <alternative_image id="7376" f="splash.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321145453_9139_b.png" />
+    <alternative_image id="7377" f="splash_short.png" u="http://__CLOUD_FRONT_HOST__/a/31000287/images/c_31000287_20150321145453_9139_b.png" />
+    <check value="OK" />
+</content>

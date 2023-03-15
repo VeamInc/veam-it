@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <mcn_id value="0" />
+    <app_id value="31000000" />
+    <app_name value="Veam Templates" />
+    
+    <template_ids value="8_1_2_7_3" />
+    
+    <tab_title_1 value="YouTubeList" />
+    <template_title_1 value="YouTube List" />
+    
+    <tab_title_2 value="ForumName" />
+    <template_title_2 value="Forum Name" />
+    
+    <tab_title_3 value="WebList" />
+    <template_title_3 value="Web List" />
+    
+    <tab_title_5 value="RecipeName" />
+    <template_title_5 value="Recipe Name" />
+    
+    <tab_title_7 value="MixedName" />
+    <template_title_7 value="Mixed Name" />
+    
+    <tab_title_8 value="Subscription" />
+    <template_title_8 value="Subscription Name" />
+    
+    <base_text_color_argb value="FF000000" />
+    <base_background_color_argb value="33FFFFFF" />
+    
+    <tab_text_color_argb value="FF0000FF" />
+    
+    <top_bar_height value="45.0" />
+    <top_bar_color_argb value="D1FF0000" />
+    <top_bar_title_color_argb value="FFFFFFFF" />
+    <top_bar_title_font value="HelveticaNeue" />
+    <top_bar_title_font_size value="18.0" />
+    
+    
+    <table_selection_color_argb value="FFC5E0F2" />
+
+    <new_videos_text value="New Videos" />
+    <new_videos_text_color_argb value="FFFF91D1" />
+
+    <number_of_goodjob_images value="10" />
+    
+    <subscription_price_0 value="0.99" />
+</list>

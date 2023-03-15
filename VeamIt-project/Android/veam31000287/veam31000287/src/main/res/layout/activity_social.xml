@@ -1,0 +1,18 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:background="#101010"
+    android:id="@+id/rootLayout"
+    android:padding="0px"
+     >
+	    <fragment
+	      	android:id="@+id/map"
+	      	android:layout_width="match_parent"
+	      	android:layout_height="match_parent"
+	      	class="co.veam.veam31000287.VeamMapFragment"
+      	/>
+</RelativeLayout>

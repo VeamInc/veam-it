@@ -1,0 +1,21 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+    viewport:      width=device-width, initial-scale=1.0
+
+  stylesheets:    [admin/bootstrap.css,admin/bootstrap.css,admin/bootstrap-responsive940.css,admin/fancybox/jquery.fancybox.css,admin/flexslider.css,admin/style.css,admin/style-responsive.css,admin/flexisel.css,admin/jquery.easy-pie-chart.css,admin/chart.css,admin/colorpicker/colorpicker.css,admin/skins/default.css,admin/skins/silver.css,admin/bodybg/bg1.css]
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "co.veam.veam31000287"
+        minSdkVersion 14
+        targetSdkVersion 22
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+        }
+    }
+}
+
+dependencies {
+    compile project(':facebookSDK')
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:recyclerview-v7:21.0.+'
+    compile 'com.google.android.gms:play-services-analytics:+'
+    compile 'com.google.android.gms:play-services-gcm:+'
+    compile 'com.google.android.gms:play-services-location:+'
+    compile 'com.google.android.gms:play-services-maps:+'
+    compile 'com.google.android.gms:play-services-ads:+'
+    compile files('libs/libGoogleAnalyticsV2.jar')
+    compile files('libs/twitter4j-core-4.0.2.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile files('libs/KiipSDK.jar')
+    compile files('libs/dropbox-android-sdk-1.6.3.jar')
+    compile files('libs/json_simple-1.1.jar')
+}
