@@ -1,5 +1,8 @@
-# <img width="257" alt="Veam logo2" src="https://user-images.githubusercontent.com/127921533/227145922-4fd7c72a-9e10-499e-aef1-12d34a96df7c.png">
+<p align="center">
+<img width="257" alt="Veam logo2" src="https://user-images.githubusercontent.com/127921533/227145922-4fd7c72a-9e10-499e-aef1-12d34a96df7c.png">
+</p>
 <br>
+<p align="center">
 Veam-It はアプリをノーコードで生成するアプリです
 <br>
 ユーチューバーたちのアプリを数多く生成し、月額課金の実績があります
@@ -12,3 +15,4 @@ Veam-It is an app that generates apps with no code
 We have generated many apps for YouTubers and have a proven track record of monthly subscriptions
 <br>
 Using the source code plus some effort to integrate them, you can develop a no-code app generation app
+</p>
