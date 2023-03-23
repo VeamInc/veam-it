@@ -12,7 +12,7 @@ Veam-It はアプリをノーコードで生成するアプリです
 <Br>
 Veam-It is an app that generates apps with no code
 <br>
-We have generated many apps for YouTubers and have a proven track record of monthly subscription earnings
+We have generated many apps for YouTubers and have a proven track record of monthly subscription
 <br>
-Using the source code plus some effort to integrate them, you can develop a no-code app generation app
+Using the source code plus some effort to integrate, you can develop a no-code app generation app
 </p>
