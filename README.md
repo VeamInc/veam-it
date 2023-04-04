@@ -14,7 +14,7 @@ Veam-It is an app that generates apps with no code
 <br>
 We have generated many apps for YouTubers and have a proven track record of monthly subscription
 <br>
-You can develop a no-code app-generating application by following the steps described below
+You can develop a no-code app-generating app by following the steps described below
 </p>
 <br>
 <br>
